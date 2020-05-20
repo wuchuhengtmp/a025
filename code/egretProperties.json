@@ -26,7 +26,8 @@
 			"name": "tween"
 		},
 		{
-			"name": "particle"
+			"name": "particle",
+			"path": "/Users/wuchuheng/Library/Application Support/Egret/engine/4.0.3/build/egret-game-library/particle/libsrc"
 		}
 	]
 }

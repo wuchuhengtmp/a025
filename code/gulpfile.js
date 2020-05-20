@@ -5,7 +5,8 @@ var reload = browserSync.reload;
 
 // 跨域设置
 var jsonPlaceholderProxy = proxy(['/wapi', '/assets', '/addons'], {
-	target: 'http://farm.bcnrc.com/',
+	// target: 'http://farm.bcnrc.com/',
+	target: 'http://a025.mxnt.net/',
 	//target: 'http://taojin.www.com/',
 	changeOrigin: true,
 	logLevel: 'debug',
