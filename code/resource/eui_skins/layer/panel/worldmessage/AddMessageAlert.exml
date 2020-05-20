@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WorldMessageSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bgMask" fillAlpha="0.35" right="0" top="0" bottom="0" left="0"/>
+	<e:Group id="groupPanel" horizontalCenter="0" width="640" verticalCenter="0" height="960" x="10" y="10">
+		<e:Image source="c_panel2_png" verticalCenter="-20" horizontalCenter="0" width="464" height="316" scale9Grid="136,128,4,2"/>
+		<e:Image source="trimming1_png" y="279" x="183"/>
+		<e:Image source="trimming2_png" y="302" x="381"/>
+		<e:Image horizontalCenter="-3" y="269" source="send_title_png"/>
+		<e:Label id="labelTxt" textColor="0xe53929" text="每发布一条世界消息消耗100金币" width="385" size="20" height="33" textAlign="center" verticalAlign="middle" lineSpacing="8" y="513" anchorOffsetY="0" wordWrap="true" multiline="true" anchorOffsetX="0" horizontalCenter="-0.5"/>
+
+		<e:Button id="btnOk" label="发布" skinName="skin.MidButtonSkin" x="209.5" y="578" anchorOffsetX="83" anchorOffsetY="30"/>
+		<e:Button id="btnNo" label="取消" skinName="skin.MidButtonSkin" x="404.5" y="579" anchorOffsetX="84" anchorOffsetY="31"/>
+		<e:Image source="inp_bg_png" x="121" y="349" width="397" scale9Grid="14,14,2,8" anchorOffsetX="0" anchorOffsetY="0" height="163"/>
+		<e:EditableText id="etMessage" x="127.01" y="356.28" anchorOffsetX="-1.17" width="384" anchorOffsetY="1.28" height="150" multiline="true" wordWrap="true" prompt="erter" promptColor="0xa8a3a3"/>
+		<e:Rect id="rectMask" fillAlpha="0" x="1" y="-5"/>
+	</e:Group>
+</e:Skin>

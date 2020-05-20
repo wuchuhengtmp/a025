@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skin.TabBar" xmlns:e="http://ns.egret.com/eui" states="up,down" xmlns:w="http://ns.egret.com/wing" width="140" height="55">
+	<w:Config id="15b3832e44d"/>
+	<e:Image bottom="0" source="tab_selected_png" includeIn="down" right="5" top="0" left="0"/>
+	<e:Image bottom="0" source="tab_unselecte_png" includeIn="up" left="0" right="5" top="0"/>
+	<e:Label text="{data}" textColor.down="0xFFFFFF" textColor.up="0x6b4926" textColor="0xffffff" size="24" strokeColor.down="0x6b4926" stroke.down="3" bold.up="true" horizontalCenter="-5" verticalCenter="0" fontFamily="huakang"/>
+</e:Skin>

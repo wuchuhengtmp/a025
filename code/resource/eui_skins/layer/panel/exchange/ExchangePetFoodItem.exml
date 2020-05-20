@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ExchangePetFoodItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="530" height="130">
+	<e:Image source="shop_itembg_png" left="8" width="524" height="124" top="6" scale9Grid="90,57,4,2" locked="true"/>
+	<e:Button id="btnEx" label="兑换" skinName="skin.ShopBuyButtonSkin" y="49" x="422.33" anchorOffsetX="43.33" anchorOffsetY="22"/>
+	<e:Group id="groupCost" height="76" width="77" x="104" y="29">
+	</e:Group>
+	<e:Image source="inp_bg_png" x="228" y="28" width="110" scale9Grid="14,14,2,8"/>
+	<e:Button id="btnSub" x="249" y="91.8" anchorOffsetX="24" anchorOffsetY="16.8">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_sub_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btnAdd" y="91" x="317.6" anchorOffsetX="23.6" anchorOffsetY="16">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_add_png"/>
+				<e:Label id="labelDisplay0" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btnMax" x="422.53" y="94.33" anchorOffsetX="18.53" anchorOffsetY="7.33">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_max_png"/>
+				<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:EditableText id="inpNum" text="1" x="233" y="33" width="101" textAlign="center" size="28" restrict="0-9" inputType="tel"/>
+</e:Skin>

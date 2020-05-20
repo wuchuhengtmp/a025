@@ -1,0 +1,6 @@
+{"file":"roleinfo.png","frames":{
+"role_item_diamond_png":{"x":358,"y":0,"w":92,"h":30,"offX":0,"offY":0,"sourceW":92,"sourceH":30},
+"role_item_id_png":{"x":356,"y":32,"w":72,"h":30,"offX":0,"offY":0,"sourceW":72,"sourceH":30},
+"role_item_lv_png":{"x":262,"y":0,"w":94,"h":30,"offX":0,"offY":0,"sourceW":94,"sourceH":30},
+"role_item_name_png":{"x":262,"y":32,"w":92,"h":30,"offX":0,"offY":0,"sourceW":92,"sourceH":30},
+"panel_title_role_info_png":{"x":0,"y":0,"w":260,"h":83,"offX":0,"offY":0,"sourceW":260,"sourceH":83}}}

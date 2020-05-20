@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FriendAddPanelSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bgMask" left="0" right="0" top="0" bottom="0" fillAlpha="0.15"/>
+	<e:Group height="960" width="640" horizontalCenter="0" verticalCenter="0">
+		<e:Image width="464" height="316" horizontalCenter="0" verticalCenter="-20" scale9Grid="136,60,4,6" source="c_panel2_png"/>
+		<e:Image source="trimming1_png" x="127" y="279"/>
+		<e:Image source="trimming2_png" x="441" y="302"/>
+		<e:Image y="263" horizontalCenter="0" source="friend_title_search_png"/>
+		<e:Button id="btnClose" horizontalCenter="201" verticalCenter="-163">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_close_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label text="按ID查找玩家" x="124" y="370" size="24" textColor="0x753F24"/>
+		<e:Image source="inp_bg_png" x="271" y="362" width="134" scale9Grid="13,16,4,6"/>
+		<e:EditableText id="inpID" width="117" height="34" x="279" y="365" size="20" verticalAlign="middle" textAlign="left" textColor="0xFFFFFF" restrict="0-9" inputType="tel"/>
+		<e:Button id="btnSearch" label="查找" skinName="skin.ShopBuyButtonSkin" horizontalCenter="135" verticalCenter="-100"/>
+		<e:Image source="line_png" y="427" fillMode="repeat" width="367" x="128"/>
+		<e:Label y="457" textColor="0xFFCC00" text="游戏昵称" fontFamily="huakang" strokeColor="0x9C460B" stroke="3" size="24" x="173"/>
+		<e:Label y="457" textColor="0xFFCC00" text="等级" fontFamily="huakang" strokeColor="0x9C460B" stroke="3" size="24" x="333"/>
+		<e:Label y="457" textColor="0xFFCC00" text="财富" fontFamily="huakang" strokeColor="0x9C460B" stroke="3" size="24" x="420"/>
+		<e:Label id="labelName" text="爱情海大厦驾驶的飞机" x="119" y="504" textColor="0x753F24" size="20" textAlign="center" width="203"/>
+		<e:Label id="labelLv" y="504" textColor="0x753F24" text="60" textAlign="center" width="56" size="20" x="330" height="20"/>
+		<e:Label id="labelMoney" y="504" textColor="0x753F24" size="20" text="60" textAlign="center" width="102" height="20" x="391"/>
+		<e:Button id="btnEnter" label="去农场" skinName="skin.MidButtonSkin" horizontalCenter="100" verticalCenter="101"/>
+		<e:Button id="btnAdd" label="加好友" skinName="skin.MidButtonSkin" horizontalCenter="-100" verticalCenter="101"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BuildingCostItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="114" height="149">
+	<e:Image source="building_cost_itembg_png"/>
+	<e:Image id="imgIcon" horizontalCenter="2" verticalCenter="-17.5"/>
+	<e:Label id="labelTip" text="标签" y="114" horizontalCenter="2" size="20" stroke="2" strokeColor="0x724f2e"/>
+</e:Skin>

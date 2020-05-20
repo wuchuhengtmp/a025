@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WorldMessageItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="log_itembg_png" scale9Grid="23,17,4,7" width="477" height="65"/>
+	<e:Label id="labelTime" text="2017-05-05\n00:00:00" x="10" y="7" width="110" size="20" textColor="0x724F2E" multiline="true" lineSpacing="3" height="48" scaleX="1" scaleY="1" textAlign="center"/>
+	<e:Label id="labelMsg" text="标签" x="122" y="6" width="347" size="22" textColor="0x724F2E" multiline="true" lineSpacing="4" height="48" verticalAlign="middle" textAlign="left" anchorOffsetX="0"/>
+</e:Skin>

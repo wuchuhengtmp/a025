@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BubbleTipSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="200" height="75">
+	<e:Group id="groupBubble" width="200" height="75" x="157" y="75" anchorOffsetX="157" anchorOffsetY="75" scaleX="1" touchThrough="true">
+		<e:Image id="imgBG" scale9Grid="10,10,10,10" width="200" x="0" height="75" y="0" scaleX="1" scaleY="1" source="dogtipbg_png"/>
+		<e:Label id="labelContent" text="" textAlign="center" size="16" verticalAlign="middle" lineSpacing="5" width="186" height="60" y="4" x="7" stroke="2" strokeColor="0xfdfafa" textColor="0x963318"/>
+	</e:Group>
+</e:Skin>

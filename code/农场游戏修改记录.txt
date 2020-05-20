@@ -1,0 +1,145 @@
+﻿农场游戏修改记录
+1.网络地址修改主要在两个地方
+    ①gulpfile.js中修改跨域域名
+    ②src/common/Const.ts中修改接口相关地址
+2.使用果实 和出售 参考开启宝箱
+    E:\phpStudy\farm\code\src\layer\panel\warehouse\WareHouseItem.ts onLongTouchEnd（）
+
+    添加
+    E:\phpStudy\farm\code\src\layer\panel\treasurebox\FruitUseBoxPannel.ts
+    E:\phpStudy\farm\code\resource\eui_skins\layer\panel\treasurebox\FruitUseBox.exml
+    在E:\phpStudy\farm\code\libs\exml.e.d.ts中添加皮肤类
+
+
+    后台：app/modules/game/controllers/UserController.php中添加相应的果实使用方法和果实出售方法
+
+    ①果实出售
+
+    ②果实使用
+        在产品表中添加字段 ALTER TABLE  `dhc_trade_product` ADD  `chanceinfo` VARCHAR( 3000 ) NOT NULL COMMENT  '使用获得道具概率信息';
+        数据格式：{"win":[{"tid":"diamonds","percent":10,"min":10,"max":30},{"tid":"11","percent":10,"min":1,"max":1}],"desc":"可获得金币、道具或者使用掉","nullpercent":0}
+            说明：win后面为可获得的道具或者金币的概率和最大最小数量 tid为道具id+type（diamonds代表金币），percent为获得该道具的概率，min为最小道具数量，max为最大道具数量
+                desc为使用该果实时的说明信息
+                nullpercent是使用该果实时得不到任何道具及金币的概率，如果为0则一定可以获得道具或者金币
+
+
+
+3.出售果实 FruitUseBoxPannel
+    在使用果实界面点击出售时弹出出售果实对话框  出售后得到的为原系统中的钻石
+
+4.更换图片或者修改图片
+    E:\phpStudy\farm\code\resource\default.res.json
+
+5.将原有钻石全部替换为金币，除钻石宝箱以外
+
+6.添加土地卡流程
+    ①在app/modules/backend/controllers/OrchardController.php中public function getToolType()添加土地卡类型 
+            "15"=>"土地卡"
+        在public function gettypes()中添加土地卡名称
+            'redcard'=>'红土地卡',
+            'blackcard'=>'黑土地卡',
+            'goldcard'=>'金土地卡'
+        public function getLogsType()中添加土地卡日子类型
+
+    ②在dhc_orchard_goods中添加对应名称的数据
+        INSERT INTO `taojin`.`dhc_orchard_goods` (`tId`, `type`, `tName`, `depict`, `price`, `effect`, `pack`, `buyOut`, `cost`, `chanceInfo`, `reclaimLimit`, `seedUser`, `seedShop`, `createtime`, `updatetime`, `status`, `isDel`) VALUES (NULL, '15', '红土地卡', '用于免费将黄土地升级为红土地', '1000', '0', '1', '0', '', '', '0', '0', '0', '0', '0', '0', '0'), (NULL, '15', '黑土地卡', '可以免费将红土地升级为黑土地', '3000', '0', '1', '0', '', '', '0', '0', '0', '0', '0', '0', '0'), (NULL, '15', '金土地卡', '可以免费将黑土地升级为金土地', '5000', '0', '1', '0', '', '', '0', '0', '0', '0', '0', '0', '0');
+        然后在dhc_orchard_user中添加对应的字段，用于记录用户拥有的数量
+        ALTER TABLE  `dhc_orchard_user` ADD  `redcard` INT NOT NULL DEFAULT  '0' COMMENT  '红土地卡',
+            ADD  `blackcard` INT NOT NULL DEFAULT  '0' COMMENT  '黑土地卡',
+            ADD  `goldcard` INT NOT NULL DEFAULT  '0' COMMENT  '金土地卡';
+        在public function printAction()中添加用户数据导出记录
+
+    ③前台修改
+        修改\resource\config\Content.json，添加
+        ,{
+            "name": "红土地卡",
+            "type": 4,
+            "sn": 18,
+            "desc": "可以免费将黄土地升级为红土地！"
+        },{
+            "name": "黑土地卡",
+            "type": 4,
+            "sn": 19,
+            "desc": "可以免费将红土地升级为黑土地！"
+        },{
+            "name": "金土地卡",
+            "type": 4,
+            "sn": 20,
+            "desc": "可以免费将黑土地升级为金土地！"
+        }
+    ④显示到仓库道具选项卡中
+        在app/modules/game/controllers/ControllerBase.php 中读取道具信息  function getprop() 中where中添加type=15
+    ⑤给土地卡增加图标
+        在\resource\assets\icon\icon\icon.json中添加
+        "4_18_png":{"x":0,"y":80,"w":84,"h":58,"offX":0,"offY":0,"sourceW":84,"sourceH":58},
+        "4_19_png":{"x":344,"y":65,"w":86,"h":61,"offX":0,"offY":0,"sourceW":86,"sourceH":61},
+        "4_20_png":{"x":344,"y":0,"w":91,"h":63,"offX":0,"offY":0,"sourceW":91,"sourceH":63}
+7.商店销售土地卡
+    修改app/modules/game/controllers/GameController.php 在类型中添加15
+    在app/modules/game/controllers/ControllerBase.php中的function onoInfo() 和
+        function onoTitleInfo($type = "") 里面添加对应关系
+
+8.使用土地卡升级土地
+    在\resource\eui_skins\layer\panel\building\BuildingLandItem.exml中添加优先使用土地卡说明
+    在app/modules/game/controllers/UserController.php  function saveLandUpAction()中添加优先使用土地卡升级土地的逻辑
+
+9.金币转账
+    将农贸市场修改为金币转账
+    修改图标\resource\assets\game\menu\menu.png
+
+    ①添加窗口
+        在\libs\exml.e.d.ts中添加转账窗口皮肤定义
+        添加\resource\eui_skins\layer\panel\transfer\transfer.exml
+        添加\src\layer\panel\transfer\TransferPanel.ts
+    ②修改菜单
+        \code\src\scene\game\GYMenu.ts中将市场菜单修改为转账窗口
+    ③修改后台
+        app/modules/game/controllers/UserController.php添加获取用户信息函数和转账函数
+10.添加公告
+    ①后台修改路由app/config/routes.php
+    ②添加读取公告函数和显示模板 app/modules/frontend/controllers/IndexController.php app/modules/frontend/views/index.volt
+    ③修改前台调用地址 \src\common\Const.ts
+
+11.去掉果园菜单中的用户中心
+    \resource\eui_skins\scene\game\GYMenu.exml
+12.去掉充值中的账户余额和金币充值
+    \resource\eui_skins\layer\panel\pay\PayPanel.exml
+    \src\layer\panel\pay\PayPanel.ts 将钻石改为金币，将金币改为月
+13.果实使用界面优化
+    如果果实数量小于1时既不显示出售也不显示使用
+    \src\layer\panel\treasurebox\FruitUseBoxPannel.ts
+14.添加道具转账功能（transfer相关文件添加）
+    添加\src\layer\panel\transfer\TransferAlert.ts  \resource\eui_skins\layer\panel\transfer\transferAlert.exml
+    修改\libs\exml.e.d.ts 添加皮肤类定义
+15.添加世界消息
+    添加WorldMessage相关文件
+16.注册的时候随机匹配10个好友
+    app/modules/game/controllers/HomeController.php 添加角色的时候进行此操作
+17.管理员可添加土地卡
+    修改app/common/models/Orchard.php  function getAdminType()中添加土地卡
+    在农场用户列表中显示土地卡数量，修改app/modules/backend/views/orchard/user.volt 添加显示
+18.后台添加设置果实使用奖励参数
+    修改app/modules/backend/controllers/ProductController.php 和 app/modules/backend/views/product/product.volt 添加use
+
+19.在基本设置中添加转账手续费和世界消息价格
+    ALTER TABLE  `dhc_orchard_config` ADD  `transferfee` DECIMAL( 18, 2 ) NOT NULL DEFAULT  '0.00' COMMENT  '金币转账手续费';
+    ALTER TABLE  `dhc_orchard_config` ADD  `msgprice` int(11) NOT NULL DEFAULT  '100' COMMENT  '世界消息价格';
+    后台app/modules/backend/controllers/OrchardController.php 和 app/modules/backend/views/orchard/config.volt
+    修改对应前台和后台
+20.修改图标
+    修改common_b.png图片及json资源定义，修改转账、世界消息、果实使用的界面图片引用
+21.添加修改资料
+    修改会员信息界面 添加修改资料按钮 \resource\eui_skins\layer\panel\roleinfo\RoleInfoPanel.exml
+    添加修改资料界面\src\scene\auth\EditScene.ts \resource\eui_skins\scene\auth\EditScene.exml
+    后台添加修改资料app/modules/game/controllers/AuthController.php
+22.更新礼包逻辑
+    更新后开启后台设置中的补偿礼包，当前晚上12点的时候关闭，否则每天都可以领取更新礼包
+
+23Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars
+  解决的办法就是：打开php.ini，修改参数
+  max_input_vars = 10000;
+
+egret publish --runtime native
+
+新的农场 农家庄园
+添加字段 ALTER TABLE  `dhc_user` ADD  `authEndTime` int(11) NOT NULL DEFAULT  '0' COMMENT  '授权登陆有效截止时间';

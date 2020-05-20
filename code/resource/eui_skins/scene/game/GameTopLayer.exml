@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GameTopSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="190" width="640">
+	<e:Group id="groupBtn" left="0" right="0" y="1" touchThrough="true" touchEnabled="false" touchChildren="true">
+		<e:Image x="165" y="88" source="top2_png" scale9Grid="237,48,1,1" width="462" locked="true"/>
+		<e:Button id="btnLog" x="254" y="120" anchorOffsetX="0" width="64" anchorOffsetY="0" height="53">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="menu_top_log_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+
+		<e:Button id="btnRank" width="61" height="55" x="328" y="120.5" anchorOffsetX="0" anchorOffsetY="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="menu_m_rank_png"/>
+					<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnPay" x="402.5" y="116" anchorOffsetX="0" width="53" anchorOffsetY="0" height="61">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="menu_top_pay_png"/>
+					<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnFriend" x="472.5" y="116.5" width="64" height="62" anchorOffsetX="0" anchorOffsetY="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="panel_icon_friend_png"/>
+				<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnSetting" width="63" height="61" x="545.66" y="117.5" anchorOffsetX="0" anchorOffsetY="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="menu_top_setting_png"/>
+				<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnCommon" width="80" height="80" x="527.5" y="105" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="menu_top_common_png"/>
+				<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="imglaba" x="184.5" y="117" source="advertizement_png" anchorOffsetX="0" width="58" anchorOffsetY="0" height="56"/>
+	</e:Group>
+	<e:Image source="top_png" y="-10" touchEnabled="false" right="0" locked="true"/>
+	<e:Group id="_groupRes" y="6" anchorOffsetX="0" width="607">
+		<e:Image source="sicon_steel_png" x="332" y="4"/>
+		<e:Image source="sicon_stone_png" x="247" y="6"/>
+		<e:Image source="sicon_wood_png" x="158" y="4"/>
+		<e:Image source="sicon_diamond_png" x="426" y="5"/>
+		<e:Label id="labelWood" text="100000" x="192" y="11" size="20" textColor="0xFFFBE5" textAlign="left"/>
+		<e:Label id="labelStone" y="11" textColor="0xFFFBE5" text="100000" textAlign="left" size="20" x="276"/>
+		<e:Label id="labelSteel" y="11" textColor="0xFFFBE5" text="100000" textAlign="left" size="20" x="370"/>
+		<e:Label id="labelDiamond" y="11" textColor="0xFFFBE5" text="10000000000" textAlign="left" size="20" x="458"/>
+	</e:Group>
+	<e:Image id="imgHead" x="34" y="24" scaleX="0.8" scaleY="0.8" source="head5_png"/>
+	<e:Label id="labelName" text="你梦嘛喘喘的家园" y="55" textColor="0xFFFEEF" size="26" x="223" width="299" textAlign="center" wordWrap="false" stroke="1" strokeColor="0x7f5523" multiline="false" maxChars="10" bold="true"/>
+	<e:ToggleButton id="btnShowOrHide" label="切换按钮" skinName="skin.ShowOrHideButtonSkin" x="588.16" y="68.9" anchorOffsetX="20.5" anchorOffsetY="14" enabled="true"/>
+</e:Skin>

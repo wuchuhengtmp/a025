@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skin.MidButtonSkin" states="up,down,disabled" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="c_btn3_png" scale9Grid="46,17,76,21" left="0" right="0" top="0" bottom="0"/>
+	<e:Label id="labelDisplay" text="添加" horizontalCenter="-3" verticalCenter="-2" textColor="0x59120C" fontFamily="huakang" size="30"/>
+</e:Skin>

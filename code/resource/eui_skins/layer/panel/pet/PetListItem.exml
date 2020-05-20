@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PetListItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="508" height="244">
+	<e:Image source="shop_itembg_png" width="500" height="230" scale9Grid="90,57,4,2" anchorOffsetX="0" left="8" top="0" locked="true"/>
+	<e:Group x="136" y="29">
+		<e:Label text="体力" x="0" y="0" textColor="0xF8C903" stroke="3" strokeColor="0x97480E" fontFamily="huakang" size="19"/>
+		<e:Label text="经验" x="0" y="31" textColor="0xF8C903" stroke="3" strokeColor="0x97480E" fontFamily="huakang" size="19"/>
+		<e:Label text="幸运" x="0" y="62" textColor="0xF8C903" stroke="3" strokeColor="0x97480E" fontFamily="huakang" size="19"/>
+		<e:Label text="速度" x="0" y="92" textColor="0xF8C903" stroke="3" strokeColor="0x97480E" fontFamily="huakang" size="19"/>
+		<e:Label text="攻击" x="0" y="123" textColor="0xF8C903" stroke="3" strokeColor="0x97480E" fontFamily="huakang" size="19"/>
+		<e:Label text="防御" x="0" y="153" textColor="0xF8C903" stroke="3" strokeColor="0x97480E" fontFamily="huakang" size="19"/>
+	</e:Group>
+	<e:Group x="13" y="145">
+		<e:Label text="评分" x="0" y="0" textColor="0xF8C903" stroke="3" strokeColor="0x97480E" fontFamily="huakang" size="19"/>
+		<e:Label id="labelScore" text="99999" x="43" size="16" textColor="0xFFFEF7" stroke="2" strokeColor="0x685036" y="3"/>
+	</e:Group>
+
+	<e:Group x="199" y="94">
+		<e:Label id="labelLucky" text="100" x="0" size="16" textColor="0xFFFEF7" stroke="2" strokeColor="0x685036" y="0"/>
+		<e:Label id="labelAp" text="10~20" x="0" size="16" textColor="0xFFFEF7" stroke="2" strokeColor="0x685036" y="60"/>
+		<e:Label id="labelDp" text="10~20" x="0" size="16" textColor="0xFFFEF7" stroke="2" strokeColor="0x685036" y="90"/>
+		<e:Label id="labelSpeed" text="12~18" x="0" size="16" textColor="0xFFFEF7" stroke="2" strokeColor="0x685036" y="30"/>
+	</e:Group>
+	<e:Group id="groupHead" width="60" height="60" x="26" y="64" locked="true"/>
+	<e:Image id="imgActive" width="20" height="20" x="77" y="115" source="login_chk_select_png"/>
+	<e:Label id="labelName" text="松狮" y="30" textColor="0x784226" size="18" stroke="2" strokeColor="0xffffff" textAlign="center" fontFamily="huakang" horizontalCenter="-197"/>
+
+
+	<e:Group x="199" y="32">
+		<e:ProgressBar id="proHp" x="0" y="0" width="200" height="12" value="0" maximum="100" minimum="0" skinName="skin.ExpBarSkin"/>
+		<e:Label id="labelHp" text="80/100" x="0" size="11" textColor="0xFFFEF7" stroke="2" strokeColor="0x685036" y="0.5" textAlign="center" width="200"/>
+	</e:Group>
+	
+	<e:Group x="199" y="62.5">
+		<e:ProgressBar id="proExp" x="0" y="0" width="200" height="12" value="0" maximum="100" minimum="0" skinName="skin.ExpBarSkin"/>
+		<e:Label id="labelExp" text="80/100" x="0" size="11" textColor="0xFFFEF7" stroke="2" strokeColor="0x685036" y="0.5" width="200" textAlign="center"/>
+	</e:Group>
+	<e:Label id="labelLv" text="Lv.1" size="16" textColor="0xFFFEF7" stroke="2" strokeColor="0x685036" y="114" textAlign="center" horizontalCenter="-198.5"/>
+
+	<e:Button id="btnSwitch" label="放出" skinName="skin.ShopBuyButtonSkin" width="110" height="45" x="389" y="115" anchorOffsetX="54" anchorOffsetY="22"/>
+	<e:Button id="btnDrop" label="抛弃" skinName="skin.ShopBuyButtonSkin" width="110" height="45" x="390" y="178" anchorOffsetX="55" anchorOffsetY="22"/>
+</e:Skin>

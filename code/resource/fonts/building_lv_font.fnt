@@ -1,0 +1,15 @@
+{"file":"building_lv_font.png","frames":{
+"L":{"x":96,"y":69,"w":21,"h":33,"offX":2,"offY":0,"sourceW":25,"sourceH":33},
+"V":{"x":96,"y":35,"w":22,"h":32,"offX":2,"offY":1,"sourceW":26,"sourceH":33},
+".":{"x":15,"y":70,"w":14,"h":16,"offX":2,"offY":17,"sourceW":18,"sourceH":33},
+"0":{"x":48,"y":35,"w":22,"h":33,"offX":2,"offY":0,"sourceW":26,"sourceH":33},
+"1":{"x":0,"y":70,"w":13,"h":33,"offX":2,"offY":0,"sourceW":17,"sourceH":33},
+"2":{"x":48,"y":0,"w":22,"h":33,"offX":2,"offY":0,"sourceW":26,"sourceH":33},
+"3":{"x":0,"y":35,"w":22,"h":33,"offX":2,"offY":0,"sourceW":26,"sourceH":33},
+"4":{"x":0,"y":0,"w":22,"h":33,"offX":2,"offY":0,"sourceW":26,"sourceH":33},
+"5":{"x":24,"y":0,"w":22,"h":33,"offX":2,"offY":0,"sourceW":26,"sourceH":33},
+"6":{"x":72,"y":0,"w":22,"h":33,"offX":2,"offY":0,"sourceW":26,"sourceH":33},
+"7":{"x":72,"y":35,"w":22,"h":33,"offX":2,"offY":0,"sourceW":26,"sourceH":33},
+"8":{"x":24,"y":35,"w":22,"h":33,"offX":2,"offY":0,"sourceW":26,"sourceH":33},
+"9":{"x":96,"y":0,"w":22,"h":33,"offX":2,"offY":0,"sourceW":26,"sourceH":33},
+" ":{"x":119,"y":69,"w":7,"h":33,"offX":0,"offY":0,"sourceW":7,"sourceH":33}}}

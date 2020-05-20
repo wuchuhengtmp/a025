@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameViewSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="15b0ef9c813" ></w:Config>
+	<e:Group id="landGroup">
+	</e:Group>
+	<e:Image id="imgLandLight" source="land_light_png" visible="false"/>
+	<e:Group id="plantGroup"/>
+	<e:Group id="stateGroup"/>
+</e:Skin>

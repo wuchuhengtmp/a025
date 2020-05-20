@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BuildingSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="bgMask" fillAlpha="0.35" right="0" left="0" top="0" bottom="0"/>
+	<e:Component id="panelCommon" skinName="common.PanelCommonSkin" left="0" right="0" top="0" bottom="0" locked="true"/>
+	<e:Group width="640" height="960" touchThrough="true" verticalCenter="0" horizontalCenter="0">
+		<e:Image source="inner_page_png" y="248" scale9Grid="31,31,8,9" width="538" height="540" x="51"/>
+		<e:Group id="groupTab" x="80" width="414" y="201" height="46"/>
+		<e:Group id="groupMain" height="539" width="537" x="51" y="248" touchThrough="true" touchEnabled="false">
+		</e:Group>
+	</e:Group>
+</e:Skin>

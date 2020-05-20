@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoleInfoPanelSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bgMask" left="0" right="0" top="0" bottom="0" fillAlpha="0.35"/>
+	<e:Group height="960" width="640" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="c_panel2_png" width="500" height="300" scale9Grid="136,128,4,2" horizontalCenter="0" verticalCenter="-20"/>
+		<e:Button id="editBtn" label="修改资料" skinName="skin.MidButtonSkin" height="50" width="140" verticalCenter="92" horizontalCenter="-87"/>
+		<e:Image source="trimming1_png" x="127" y="283"/>
+		<e:Image source="trimming2_png" x="441" y="306"/>
+		<e:Image y="267" horizontalCenter="0" source="panel_title_role_info_png"/>
+		<e:Button id="btnClose" horizontalCenter="222" verticalCenter="-152">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_close_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="role_item_bg_png" y="356" x="102"/>
+		<e:Image id="imgHead" source="head2_png" y="373" x="117"/>
+		<e:Image source="role_item_diamond_png" x="267" y="489"/>
+		<e:Image source="role_item_id_png" x="267" y="406"/>
+		<e:Image source="role_item_lv_png" x="267" y="448"/>
+		<e:Image source="role_item_name_png" x="267" y="365"/>
+		<e:Label id="labelName" text="标签标签标" x="366" textColor="0xFFFBF2" size="20" width="168" stroke="2" strokeColor="0x724f2e" multiline="false" wordWrap="false" maxChars="7" y="370"/>
+		<e:Label id="labelId" multiline="false" stroke="2" textColor="0xFFFBF2" size="20" text="625550" x="366" width="168" maxChars="7" wordWrap="false" strokeColor="0x724F2E" y="411"/>
+		<e:Label id="labelLv" width="168" stroke="2" textColor="0xFFFBF2" text="Lv.30" wordWrap="false" strokeColor="0x724F2E" y="453" size="20" x="366" multiline="false" maxChars="7"/>
+		<e:Label id="labelDiamond" width="100" stroke="2" textColor="0xFFFBF2" text="99999" size="20" x="400" y="494" wordWrap="false" strokeColor="0x724F2E" multiline="false" maxChars="7"/>
+		<e:Image source="sicon_diamond_png" x="359" y="487"/>
+		<e:Button id="logoutBtn" label="切换账号" skinName="skin.MidButtonSkin" height="50" width="140" verticalCenter="92" horizontalCenter="80"/>
+	</e:Group>
+</e:Skin>

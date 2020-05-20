@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skin.PanelCommon" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="830" width="640">
+	<e:Rect right="0" left="0" top="0" bottom="0" fillAlpha="0" id="rectMask" x="10" y="10"/>
+	<e:Group id="panel" horizontalCenter="0" verticalCenter="0" height="660" width="640" touchEnabled="false" touchChildren="true">
+		<e:Image id="imgBg" scale9Grid="122,179,5,4" width="540" height="665" horizontalCenter="0" verticalCenter="0" touchEnabled="false" source="c_panel_png"/>
+		<e:Group id="title" height="61" width="488" x="75" y="-2">
+			<e:Image id="imgTitle" source="panel_title_warehouse_png" horizontalCenter="12" touchEnabled="false" bottom="-1"/>
+			<e:Image id="imgIcon" source="panel_icon_warehouse_png" touchEnabled="false" horizontalCenter="-176.5" bottom="-5"/>
+		</e:Group>
+		<e:Button id="btnClose" label="离开" skinName="skin.ExitButtonSkin" horizontalCenter="0" bottom="-12"/>
+	</e:Group>
+</e:Skin>

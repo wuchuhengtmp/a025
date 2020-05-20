@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CountAlertSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bgMask" fillAlpha="0.35" right="0" top="0" bottom="0" left="0"/>
+	<e:Rect id="rectMask" left="0" right="0" top="0" bottom="0" fillAlpha="0"/>
+	<e:Group id="groupPanel" horizontalCenter="0" width="640" verticalCenter="0" height="960" x="10" y="10">
+		<e:Image source="c_panel2_png" verticalCenter="-20" horizontalCenter="0" width="464" height="316" scale9Grid="136,128,4,2"/>
+		<e:Image source="trimming1_png" y="279" x="183"/>
+		<e:Image source="trimming2_png" y="302" x="381"/>
+		<e:Image horizontalCenter="0" y="263" source="panel_title_alert_png"/>
+		<e:Group y="428" width="230" height="40" horizontalCenter="-8">
+			<e:Image source="inp_bg_png" x="59.5" y="0" width="110" scale9Grid="14,14,2,8"/>
+			<e:EditableText id="inpNum" text="1" x="64.5" y="5" width="101" textAlign="center" size="28" restrict="0-9" inputType="tel"/>
+			<e:Button id="btnSub" anchorOffsetX="24.8" anchorOffsetY="16.4" y="20" x="21">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_sub_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="btnAdd" x="207.5" y="21" anchorOffsetX="24.8" anchorOffsetY="16.4">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_add_png"/>
+				<e:Label id="labelDisplay0" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Label id="labelTxt" textColor="0x753F24" text="确定购买30金币吗?" width="385" size="26" height="81" textAlign="center" verticalAlign="middle" lineSpacing="8" y="345" anchorOffsetY="0" wordWrap="true" multiline="true" anchorOffsetX="0" horizontalCenter="-6.5"/>
+
+		<e:Button id="btnOk" label="确定" skinName="skin.MidButtonSkin" x="216" y="511" anchorOffsetX="83" anchorOffsetY="30"/>
+		<e:Button id="btnNo" label="取消" skinName="skin.MidButtonSkin" x="411" y="512" anchorOffsetX="84" anchorOffsetY="31"/>
+	</e:Group>
+</e:Skin>

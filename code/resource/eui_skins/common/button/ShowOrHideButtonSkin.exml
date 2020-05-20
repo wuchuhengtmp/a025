@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skin.ShowOrHideButtonSkin" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" xmlns:e="http://ns.egret.com/eui">
+	<e:Image rotation.upAndSelected="180" rotation.downAndSelected="180" rotation.disabledAndSelected="180" source="top_arrow_png" anchorOffsetX="20.5" anchorOffsetY="14" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RankPanelSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="bgMask" fillAlpha="0.35" right="0" left="0" top="0" bottom="0"/>
+	<e:Component id="panelCommon" skinName="common.PanelCommonSkin" left="0" right="0" top="0" bottom="0" locked="true"/>
+	<e:Group width="640" height="960" touchThrough="true" verticalCenter="0" horizontalCenter="0">
+		<e:Image source="inner_page_png" y="216" scale9Grid="31,31,8,9" width="485" height="620" x="78"/>
+		<e:Group id="groupTab" x="78" width="274" y="169" height="46"/>
+		<e:Group id="groupTitleUser" x="84" width="471" y="205" height="70" locked="true" visible="false">
+			<e:Label text="排名" x="26" y="25" size="22" fontFamily="huakang" textColor="0xFFCC00" stroke="3" strokeColor="0x9c460b"/>
+			<e:Label y="25" textColor="0xFFCC00" text="游戏昵称" fontFamily="huakang" stroke="3" size="22" strokeColor="0x9C460B" x="109"/>
+			<e:Label y="25" textColor="0xFFCC00" text="等级" fontFamily="huakang" stroke="3" size="22" strokeColor="0x9C460B" x="241"/>
+			<e:Label y="25" textColor="0xFFCC00" text="财富" fontFamily="huakang" stroke="3" size="22" strokeColor="0x9C460B" x="321"/>
+			<e:Label y="25" textColor="0xFFCC00" text="家园" fontFamily="huakang" stroke="3" size="22" strokeColor="0x9C460B" x="408"/>
+		</e:Group>
+		<e:Group id="groupTitlePet" x="84" width="471" y="205" height="70">
+			<e:Label text="排名" x="23" y="25" size="22" fontFamily="huakang" textColor="0xFFCC00" stroke="3" strokeColor="0x9C460B"/>
+			<e:Label y="25" textColor="0xFFCC00" text="昵称" fontFamily="huakang" stroke="3" size="22" strokeColor="0x9C460B" x="107"/>
+			<e:Label y="24" textColor="0xFFCC00" text="主人昵称" fontFamily="huakang" stroke="3" size="22" strokeColor="0x9C460B" x="211"/>
+			<e:Label y="25" textColor="0xFFCC00" text="等级" fontFamily="huakang" stroke="3" size="22" strokeColor="0x9C460B" x="331"/>
+			<e:Label y="25" textColor="0xFFCC00" text="评分" fontFamily="huakang" stroke="3" size="22" strokeColor="0x9C460B" x="393"/>
+		</e:Group>
+		<e:Scroller id="scroller" width="464" x="91" height="525" y="255"  scrollPolicyV="off" scrollPolicyH="on">
+			<e:List id="list" itemRendererSkinName="RankPlayItemRenderSkin" height="525">
+				<e:ArrayCollection>
+					<e:Array>
+					</e:Array>
+				</e:ArrayCollection>
+			</e:List>
+		</e:Scroller>
+		
+		<e:Button id="btnPrev" x="373" y="789">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_page_prev_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnNext" x="490" y="789">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_page_next_png"/>
+					<e:Label id="labelDisplay0" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label id="labelPage" text="1/60" x="418" y="798" size="24" width="72" textColor="0x753F24" textAlign="center"/>
+		<e:Label id="labelRank" text="查询中……" x="93" y="799" size="22" width="275" textColor="0x753F24" textAlign="left"/>
+	</e:Group>
+</e:Skin>

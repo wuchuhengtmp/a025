@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PanelLoadingSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="cirGroup" height="70" width="76" y="477" x="320">
+		<e:Image source="loading_panel_png" x="-44" y="-44" locked="true"/>
+	</e:Group>
+	<e:Label id="loadTF" text="Loading" size="20" horizontalCenter="0" textAlign="center" verticalCenter="0" verticalAlign="middle"/>
+</e:Skin>

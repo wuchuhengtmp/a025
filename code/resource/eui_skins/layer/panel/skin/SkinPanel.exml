@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SkinPanelSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="bgMask" right="0" top="0" bottom="0" left="0" fillAlpha="0.35"/>
+	<e:Component id="panelCommon" skinName="common.PanelCommonSkin" left="0" right="0" top="0" bottom="0"/>
+	<e:Group width="640" height="960" touchThrough="true" verticalCenter="0" horizontalCenter="0">
+		<e:Scroller width="558" height="590" y="191" horizontalCenter="0">
+			<e:List id="list" left="0" right="0" top="0" bottom="0" />
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

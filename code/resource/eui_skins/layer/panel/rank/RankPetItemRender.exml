@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RankPetItemRenderSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="53">
+	<e:Image source="friend_item_png" y="3" width="450" height="45"/>
+	<e:Image id="imgRank" source="rank1_png" x="18" y="6"/>
+	<e:Label id="labelRank" text="1" x="7" y="18" size="24" textColor="0x753F24" width="50" textAlign="center"/>
+	<e:Label id="labelName" y="17" textColor="0x753F24" text="玩家名称个字" textAlign="center" width="120" size="20" x="58"/>
+	<e:Label id="labelOwnerName" y="17" textColor="0x753F24" text="玩家名称个字" textAlign="center" width="150" size="20" x="180"/>
+	<e:Label id="labelLv" y="17" textColor="0x753F24" text="10" width="37" size="20" x="327" height="20" textAlign="center"/>
+	<e:Label id="labelScore" y="17" textColor="0x753F24" size="20" text="152000" textAlign="center" width="70" height="20" x="371"/>
+</e:Skin>

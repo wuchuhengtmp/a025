@@ -1,0 +1,6 @@
+.idea
+cache
+farm
+bin-release
+bin-debug
+code/node_modules

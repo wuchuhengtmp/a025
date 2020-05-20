@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PayPanelSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bgMask" right="0" left="0" top="0" bottom="0" y="20" fillAlpha="0.35" x="20"/>
+	<e:Group height="450" horizontalCenter="0" id="panel" verticalCenter="0" width="640" touchEnabled="false" touchChildren="true" x="10" y="10">
+		<e:Image id="imgBg" source="c_panel_png" height="480" horizontalCenter="0" verticalCenter="0" width="600" touchEnabled="false" scale9Grid="122,179,5,4"/>
+		<e:Group id="title" y="-15" width="488" height="61" x="75">
+			<e:Image bottom="2" touchEnabled="false" horizontalCenter="12.5" id="imgTitle0" source="panel_title_pay_png"/>
+			<e:Image bottom="-2" touchEnabled="false" horizontalCenter="-105.5" id="imgIcon0" source="panel_icon_pay_png"/>
+		</e:Group>
+		<e:Image source="pay_bg_png" y="50" horizontalCenter="-1" scale9Grid="65,200,392,11" height="367"/>
+		<e:Image source="pay_zhuangshi_png" x="7" y="35"/>
+		<e:Image source="pay_zhuangshi_png" y="35" x="634" scaleX="-1"/>
+		<e:Group id="groupPayItem1" height="218" width="165" x="67" y="137">
+			<e:Image source="pay_item_bg_png" locked="true"/>
+			<e:Image source="pay_icon1_png" x="32" y="36"/>
+			<e:Group id="groupGift1" width="96" height="59" x="40" y="65" scaleX="1" scaleY="1">
+				<e:Image width="96" height="59" x="0" y="0" scaleX="1" scaleY="1" source="giftbg_png"/>
+				<e:Label id="labelGift1" text="20钻" x="13" y="44" textColor="0xab0202" size="16" scaleX="1" scaleY="1" width="70" textAlign="center"/>
+			</e:Group>
+			<e:BitmapLabel id="labelZhuan1" y="23" font="zhuan_font_fnt" text="100z" letterSpacing="-8" rotation="0" left="22"/>
+			<e:Label text="2000金币"  textColor="0x73CFFF" size="26" fontFamily="huakang" stroke="3" strokeColor="0x0B599C" id="labelRen1" y="170"  horizontalCenter="7"/>
+		</e:Group>
+		<e:Group id="groupPayItem2" y="137" x="232" width="165" height="218">
+			<e:Image source="pay_item_bg_png" locked="true"/>
+			<e:Image source="pay_icon2_png" y="36" x="21"/>
+			<e:Group id="groupGift2" width="96" height="59" x="40" y="65" scaleX="1" scaleY="1">
+				<e:Image width="96" height="59" x="0" y="0" scaleX="1" scaleY="1" source="giftbg_png"/>
+				<e:Label id="labelGift2" text="400钻" x="13" y="44" textColor="0xAB0202" size="16" scaleX="1" scaleY="1" width="70" textAlign="center"/>
+			</e:Group>
+			<e:BitmapLabel id="labelZhuan2" left="22" text="220z" font="zhuan_font_fnt" letterSpacing="-8" y="23" rotation="0" x="10"/>
+			<e:Label text="2000金币"  textColor="0x73CFFF" size="26" fontFamily="huakang" stroke="3" strokeColor="0x0B599C" id="labelRen2" y="170"  horizontalCenter="7"/>
+		</e:Group>
+		<e:Group id="groupPayItem3" y="137" x="397" width="165" height="218">
+			<e:Image source="pay_item_bg_png" locked="true"/>
+			<e:Image source="pay_icon3_png" y="36" x="19"/>
+			<e:Group id="groupGift3" width="96" height="59" x="40" y="65" scaleX="1" scaleY="1">
+				<e:Image width="96" height="59" x="0" y="0" scaleX="1" scaleY="1" source="giftbg_png"/>
+				<e:Label id="labelGift3" text="10000钻" x="13" y="44" textColor="0xAB0202" size="16" scaleX="1" scaleY="1" width="70" textAlign="center"/>
+			</e:Group>
+			<e:Label text="2000金币"  textColor="0x73CFFF" size="26" fontFamily="huakang" stroke="3" strokeColor="0x0B599C" id="labelRen3" y="170"  horizontalCenter="7"/>
+			<e:BitmapLabel id="labelZhuan3" left="22" text="600z" font="zhuan_font_fnt" letterSpacing="-8" y="24" rotation="0" x="20"/>
+		</e:Group>
+		<e:Button id="btnClose" bottom="-24" label="离开" horizontalCenter="0" skinName="skin.ExitButtonSkin"/>
+		<!--<e:Label id="labelMoney" text="" y="119" size="24" right="258"/>
+		<e:Button id="btnPay" label="金币充值" skinName="skin.ShopBuyButtonSkin" width="120" horizontalCenter="146" verticalCenter="-94"/>-->
+	</e:Group>
+</e:Skin>

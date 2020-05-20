@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skin.LinkButtonSkin" states="up,down,disabled" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="110" height="35">
+	<e:Rect height="1" bottom="0" right="0" left="0" fillColor="0x0009ff"/>
+	<e:Label id="labelDisplay" text="进入果园" size="24" horizontalCenter="0" verticalCenter="1.5" textColor="0x0009ff"/>
+</e:Skin>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CostItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="89" height="93">
+	<e:Image id="imgIcon" source="sicon_diamond_png" verticalCenter="1" horizontalCenter="-23" scaleX="0.85" scaleY="0.85"/>
+	<e:Image source="top_cir_png" y="-1" scale9Grid="17,15,2,2" horizontalCenter="0" width="85" anchorOffsetX="0"/>
+	<e:Label id="labelCost" text="1" y="6" size="20" width="88" textAlign="center" textColor="0x270303" x="0"/>
+	<e:Label id="labelTotal" text="999" y="72" size="20" horizontalCenter="-23" textAlign="center" textColor="0x753F24"/>
+	<e:Image id="imgAdd" source="add_png" x="57" y="36"/>
+</e:Skin>

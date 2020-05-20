@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ShopSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="bgMask" fillAlpha="0.35" right="0" left="0" top="0" bottom="0"/>
+	<e:Component id="panelCommon" skinName="common.PanelCommonSkin" left="0" right="0" top="0" bottom="0"/>
+	<e:Group width="640" height="960" touchThrough="true" verticalCenter="0" horizontalCenter="0">
+		<e:Image source="inner_page_png" x="50" y="248" scale9Grid="31,31,8,9" width="540" height="499" anchorOffsetY="0"/>
+		<e:Group id="groupTab" x="80" width="301" y="201" height="46"/>
+		<e:Scroller width="535" height="492.32" x="52" y="250" scrollPolicyH="off" anchorOffsetY="0">
+				<e:List id="list" left="0" right="4" top="0" bottom="0" itemRendererSkinName="ShopItemSkin">
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object null=""/>
+							<e:Object null=""/>
+							<e:Object null=""/>
+							<e:Object null=""/>
+						</e:Array>
+					</e:ArrayCollection>
+				</e:List>
+		</e:Scroller>
+		<e:Button id="btnGame" label="进入果园" skinName="skin.LinkButtonSkin" horizontalCenter="-204" verticalCenter="287.5" visible="false"/>
+	</e:Group>
+</e:Skin>

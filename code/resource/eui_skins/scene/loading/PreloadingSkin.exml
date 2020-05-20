@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PreloadingSkin" width="640" height="1011" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image right="-19" top="-16" bottom="-22" left="-39" source="loading_bg_png"/>
+	<e:Label id="labelPro" text="0%" y="528.34" horizontalCenter="0"/>
+	<e:Image source="login_title_png" y="220.85" horizontalCenter="0"/>
+	<e:ProgressBar id="barPro" y="446.55" skinName="LoadingBarSkin" horizontalCenter="-10" value="0" minimum="0"/>
+</e:Skin>

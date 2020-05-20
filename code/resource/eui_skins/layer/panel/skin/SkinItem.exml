@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SkinItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="building_housebg_png" y="36" x="30"/>
+	<e:Image id="imgIcon" x="44" y="56"/>
+	<e:Image id="imgTitle" source="skin_title_curr_png" x="151" y="5"/>
+</e:Skin>

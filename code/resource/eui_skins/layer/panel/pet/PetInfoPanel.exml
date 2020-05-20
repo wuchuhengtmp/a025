@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PetInfoPanelSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="bgMask" fillAlpha="0.35" right="0" left="0" top="0" bottom="0" locked="true"/>
+	<e:Component id="panelCommon" skinName="common.PanelCommonSkin" left="0" right="0" top="0" bottom="0" locked="true"/>
+	<e:Group height="960" width="640" horizontalCenter="0" verticalCenter="0" touchEnabled="false" touchThrough="true">
+		<e:Image source="inner_page_png" y="240" scale9Grid="31,31,8,9" width="540" height="504" x="50" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Group id="groupTab" x="80" width="301" y="193" height="46" locked="true"/>
+		<ns1:PetDetailPanel id="comDetail" x="56" y="243" skinName="PetDetailPanelSkin"/>
+		<ns1:PetSkillPanel id="comSkill" skinName="PetSkillPanelSkin" y="245" x="56" visible="false"/>
+		<e:Button id="btnIntroLink" label="宠物介绍" skinName="skin.LinkButtonSkin" y="763" x="111" anchorOffsetX="56" anchorOffsetY="18"/>
+	</e:Group>
+</e:Skin>

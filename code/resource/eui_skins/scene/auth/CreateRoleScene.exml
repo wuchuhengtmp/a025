@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CreateRoleSceneSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image left="0" right="0" top="0" bottom="0" source="createrole_bg_jpg" locked="true"/>
+	<e:Group touchEnabled="false" width="640" horizontalCenter="0" touchChildren="true" height="676" verticalCenter="0" id="panel" x="10" y="10">
+		<e:Image id="imgBg" source="c_panel_png" scale9Grid="122,179,5,4" touchEnabled="false" width="602" horizontalCenter="0" height="663" verticalCenter="0" locked="true"/>
+		<e:Group id="title" y="5" width="488" height="61" x="75">
+			<e:Image touchEnabled="false" horizontalCenter="-3.5" bottom="0" id="imgTitle0" source="role_title_png"/>
+		</e:Group>
+		<e:Image source="pay_bg_png" x="59" y="76" scale9Grid="65,203,392,9" height="547"/>
+		<e:Image source="role_zhuangshi_png" x="40" y="586"/>
+		<e:Image source="pay_zhuangshi_png" y="57" x="633" scaleX="-1"/>
+		<e:Image source="pay_zhuangshi_png" x="4" y="57"/>
+		<e:Button id="btnOk" bottom="-14" skinName="skin.ExitButtonSkin" label="确定" horizontalCenter="0"/>
+		<e:Group id="groupHead1" height="167" width="161" x="58" y="145" rotation="-10">
+			<e:Image source="role_item_bg_png" locked="true"/>
+			<e:Image source="head1_png" x="15" y="19" locked="true"/>
+			<e:Image source="role_item_select_png" x="-6" y="-7" name="imgSelect" locked="true"/>
+		</e:Group>
+		<e:Group id="groupHead2" x="242" y="140" width="161" height="167">
+			<e:Image source="role_item_bg_png" locked="true"/>
+			<e:Image source="head2_png" y="19" x="15" locked="true"/>
+			<e:Image source="role_item_select_png" y="-7" name="imgSelect" x="-6" locked="true"/>
+		</e:Group>
+		<e:Group id="groupHead3" x="429" y="114" width="161" height="167" rotation="12">
+			<e:Image source="role_item_bg_png" locked="true"/>
+			<e:Image source="head3_png" y="19" locked="true" x="15"/>
+			<e:Image source="role_item_select_png" y="-7" name="imgSelect" x="-6" locked="true"/>
+		</e:Group>
+		<e:Group id="groupHead5" x="230" y="323" width="161" height="167" rotation="-5">
+			<e:Image source="role_item_bg_png" locked="true"/>
+			<e:Image source="head5_png" y="19" locked="true" x="15"/>
+			<e:Image source="role_item_select_png" y="-7" name="imgSelect" locked="true" x="-6"/>
+		</e:Group>
+		<e:Group id="groupHead4" y="305" width="161" rotation="15" height="167" x="106">
+			<e:Image source="role_item_bg_png" locked="true"/>
+			<e:Image source="head4_png" y="19" locked="true" x="15"/>
+			<e:Image source="role_item_select_png" y="-7" name="imgSelect" locked="true" x="-6"/>
+		</e:Group>
+		<e:Group id="groupHead6" y="302" x="419" width="161" rotation="6" height="167">
+			<e:Image source="role_item_bg_png" locked="true"/>
+			<e:Image source="head6_png" y="19" locked="true" x="15"/>
+			<e:Image source="role_item_select_png" y="-7" name="imgSelect" locked="true" x="-6"/>
+		</e:Group>
+		<e:Image source="role_name_inp_png" x="130" y="511" scale9Grid="36,30,4,3" width="323"/>
+		<e:EditableText id="inpName" width="280" height="60" x="150" y="513" textAlign="center" verticalAlign="middle"/>
+		<e:Button id="btnRandom" label="" x="506" y="540.36" anchorOffsetX="34" anchorOffsetY="35.36" width="68" height="68">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="role_btn_random_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label text="请输入不大于7个字的名称" y="582" size="20" horizontalCenter="0.5"/>
+	</e:Group>
+</e:Skin>

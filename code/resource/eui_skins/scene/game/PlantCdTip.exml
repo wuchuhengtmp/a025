@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PlantCdTipSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="245" height="95">
+	<e:Image source="log_itembg_png" left="0" top="0" bottom="0" scale9Grid="24,20,4,3" right="0"/>
+	<e:Label id="labelName" text="苹果" x="19" y="7" size="20" textColor="0x000000"/>
+	<e:Label id="labelTime" y="32" textColor="0x000000" text="8小时56分56秒" x="19" size="16" width="190"/>
+	<e:Image source="m_phase_clock_png" x="18" y="58"/>
+	<e:ProgressBar id="barTime" x="44" y="60" skinName="skin.CDBarSkin" value="100"/>
+</e:Skin>

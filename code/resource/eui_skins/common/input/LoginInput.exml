@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skin.LoginInput" xmlns:e="http://ns.egret.com/eui" states="normal,disabled,normalWithPrompt,disabledWithPrompt">
+	<e:Image left="0" right="0" top="0" bottom="0" scale9Grid="36,30,4,3" source="role_name_inp_png"/>
+ 	<e:EditableText id="textDisplay" verticalCenter="0" left="20" right="20" textColor.disabled="0xff0000" width="100%" height="48" size="24"  verticalAlign="middle" textAlign="center" textColor="0xffffff" text=""/>
+	<e:Label id="promptDisplay" left="20" right="20" width="100%" height="48" size="22" touchEnabled="false" includeIn="normalWithPrompt,disabledWithPrompt" textAlign="center" verticalAlign="middle" verticalCenter="0" fontFamily="Microsoft YaHei" textColor="0xffffff"/>
+</e:Skin>

@@ -1,0 +1,7 @@
+{"file":"createrole.png","frames":{
+"role_title_png":{"x":0,"y":0,"w":375,"h":99,"offX":0,"offY":0,"sourceW":375,"sourceH":99},
+"role_item_bg_png":{"x":174,"y":101,"w":160,"h":164,"offX":0,"offY":0,"sourceW":160,"sourceH":164},
+"role_item_select_png":{"x":0,"y":101,"w":172,"h":176,"offX":0,"offY":0,"sourceW":172,"sourceH":176},
+"role_btn_random_png":{"x":350,"y":110,"w":88,"h":88,"offX":0,"offY":0,"sourceW":88,"sourceH":88},
+"role_zhuangshi_png":{"x":0,"y":280,"w":549,"h":77,"offX":0,"offY":0,"sourceW":549,"sourceH":77},
+"role_name_inp_png":{"x":377,"y":0,"w":75,"h":62,"offX":0,"offY":0,"sourceW":75,"sourceH":62}}}

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="building.BuildingUpButtonSkin" states="up,down,disabled" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="btn_building_up_png" source.disabled="btn_building_up_gray_png"/>
+	<e:Label id="labelDisplay" text="升级" fontFamily="huakang" stroke="2" strokeColor="0x643591" size="38" horizontalCenter="-11.5" verticalCenter="-2.5" horizontalCenter.disabled="4.5" verticalCenter.disabled="-2.5"/>
+	<e:Image source="building_up_arrow_png" y="-2" width.down="46" height.down="61" y.down="-10" horizontalCenter="49.5" visible.disabled="false"/>
+</e:Skin>

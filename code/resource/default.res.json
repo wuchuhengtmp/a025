@@ -1,0 +1,794 @@
+{
+	"groups": [
+		{
+			"keys": "login_title_png,loading_bar_bg_png,loading_bar_png,loading_bg_png",
+			"name": "loading"
+		},
+		{
+			"keys": "flowers_png,flowers_json,coin_png,coin_json,dog1_json,dog1_png,petBubble_json,pet_json,pay_json,common_a_json,common_b_json,login_json,icon_json,petBubble_woman_json,createrole_bg_jpg,Content_json,Shop_json,createrole_json,bgsound_mp3,menu_json,backbutton_png,footer_img_png,gybg_png,header_bg_png,header_img_png,title_img_png,CC5_png,wenhuajingying_png,CC2_png,CC3_png,beian_png,advertizement_png,80015_1_png,80014_1_png,80014_2_png,80014_3_png,80015_2_png,80015_3_png,login_title-1_png",
+			"name": "preload"
+		},
+		{
+			"keys": "button_mp3,gain_mp3,levelup_mp3,open_box_mp3,pet_mp3,fail_mp3,shovel_mp3,sow_mp3,success_mp3",
+			"name": "audio"
+		}
+	],
+	"resources": [
+		{
+			"url": "fonts/huakang.ttf",
+			"type": "bin",
+			"name": "huakang_ttf"
+		},
+		{
+			"url": "fonts/building_lv_font.fnt",
+			"type": "font",
+			"name": "building_lv_font_fnt"
+		},
+		{
+			"url": "fonts/building_lv_font.png",
+			"type": "image",
+			"name": "building_lv_font_png"
+		},
+		{
+			"url": "fonts/renmingbi_font.fnt",
+			"type": "font",
+			"name": "renmingbi_font_fnt"
+		},
+		{
+			"url": "fonts/renmingbi_font.png",
+			"type": "image",
+			"name": "renmingbi_font_png"
+		},
+		{
+			"url": "fonts/zhuan_font.fnt",
+			"type": "font",
+			"name": "zhuan_font_fnt"
+		},
+		{
+			"url": "fonts/zhuan_font.png",
+			"type": "image",
+			"name": "zhuan_font_png"
+		},
+		{
+			"url": "particle/coin.json",
+			"type": "json",
+			"name": "coin_json"
+		},
+		{
+			"url": "particle/coin.png",
+			"type": "image",
+			"name": "coin_png"
+		},
+		{
+			"url": "particle/flowers.json",
+			"type": "json",
+			"name": "flowers_json"
+		},
+		{
+			"url": "particle/flowers.png",
+			"type": "image",
+			"name": "flowers_png"
+		},
+		{
+			"url": "anim/dog/dog1.json",
+			"type": "json",
+			"name": "dog1_json"
+		},
+		{
+			"url": "anim/dog/dog1.png",
+			"type": "image",
+			"name": "dog1_png"
+		},
+		{
+			"url": "config/random_name.json",
+			"type": "json",
+			"name": "random_name_json"
+		},
+		{
+			"url": "config/petBubble.json",
+			"type": "json",
+			"name": "petBubble_json"
+		},
+		{
+			"url": "config/petBubble_woman.json",
+			"type": "json",
+			"name": "petBubble_woman_json"
+		},
+		{
+			"url": "config/Content.json",
+			"type": "json",
+			"name": "Content_json"
+		},
+		{
+			"url": "config/Shop.json",
+			"type": "json",
+			"name": "Shop_json"
+		},
+		{
+			"url": "anim/eff/dog_lvup.json",
+			"type": "json",
+			"name": "dog_lvup_json"
+		},
+		{
+			"url": "anim/eff/dog_lvup.png",
+			"type": "image",
+			"name": "dog_lvup_png"
+		},
+		{
+			"url": "anim/eff/dog_rose.json",
+			"type": "json",
+			"name": "dog_rose_json"
+		},
+		{
+			"url": "anim/eff/dog_rose.png",
+			"type": "image",
+			"name": "dog_rose_png"
+		},
+		{
+			"url": "audio/bgsound.mp3",
+			"type": "sound",
+			"name": "bgsound_mp3"
+		},
+		{
+			"url": "audio/button.mp3",
+			"type": "sound",
+			"name": "button_mp3"
+		},
+		{
+			"url": "audio/fail.mp3",
+			"type": "sound",
+			"name": "fail_mp3"
+		},
+		{
+			"url": "audio/gain.mp3",
+			"type": "sound",
+			"name": "gain_mp3"
+		},
+		{
+			"url": "audio/levelup.mp3",
+			"type": "sound",
+			"name": "levelup_mp3"
+		},
+		{
+			"url": "audio/open_box.mp3",
+			"type": "sound",
+			"name": "open_box_mp3"
+		},
+		{
+			"url": "audio/pet.mp3",
+			"type": "sound",
+			"name": "pet_mp3"
+		},
+		{
+			"url": "audio/shovel.mp3",
+			"type": "sound",
+			"name": "shovel_mp3"
+		},
+		{
+			"url": "audio/sow.mp3",
+			"type": "sound",
+			"name": "sow_mp3"
+		},
+		{
+			"url": "audio/success.mp3",
+			"type": "sound",
+			"name": "success_mp3"
+		},
+		{
+			"url": "assets/common/common_a.json",
+			"type": "sheet",
+			"name": "common_a_json",
+			"subkeys": "add_png,annoncebg_png,btn_add_png,btn_back_home_png,btn_close_png,btn_max_png,btn_page_next_png,btn_page_prev_png,btn_sub_png,c_btn1_gray_png,c_btn1_png,c_btn2_gray_png,c_btn2_png,c_btn3_png,c_panel2_png,c_panel_png,clock2_png,ex_skin_buy_png,inner_page_png,inp_bg_png,item_bg_png,item_bg_select_png,land_light_png,land_manure_png,line_png,log_itembg_png,m_phase_clock_png,m_phase_pro_bar_png,m_phase_pro_bg_png,panel_icon_building_png,panel_icon_exchange_png,panel_icon_friend_png,panel_icon_log_png,panel_icon_pay_png,panel_icon_rank_png,panel_icon_shop_png,panel_icon_skin_png,panel_icon_warehouse_png"
+		},
+		{
+			"url": "assets/common/common_b.json",
+			"type": "sheet",
+			"name": "common_b_json",
+			"subkeys": "boxtitle_4_png,boxtitle_5_png,boxtitle_6_png,boxtitle_7_png,ex_skin_title1_png,ex_skin_title2_png,ex_skin_title3_png,ex_skin_title4_png,fruit_title_png,msg_title_png,panel_icon_blackshop_png,panel_icon_workshop_png,panel_title_alert_png,panel_title_blackshop_png,panel_title_building_png,panel_title_edit_png,panel_title_exchange_png,panel_title_forget_png,panel_title_friend_png,panel_title_log_png,panel_title_pay_png,panel_title_rank_png,panel_title_reg_png,panel_title_setting_png,panel_title_shop_png,panel_title_skin_png,panel_title_warehouse_png,panel_title_workshop_png,qingdi_icon_png,s_tip_png,send_title_png,shop_itembg_png,sicon_diamond_png,sicon_steel_png,sicon_stone_png,sicon_wood_png,skin_title_curr_png,skin_top_png,stab_png,tab_selected_png,tab_unselecte_png,tipbg_png,top_cir_png,transfer_title_png,trimming1_png,trimming2_png,tuding_png"
+		},
+		{
+			"url": "assets/game/building/building.json",
+			"type": "sheet",
+			"name": "building_json",
+			"subkeys": "btn_building_up_gray_png,btn_building_up_png,building_cost_itembg_png,building_land_num0_png,building_land_num1_png,building_land_num2_png,building_land_num3_png,building_lvbg_png,building_up_arrow_png"
+		},
+		{
+			"url": "assets/game/building/building_housebg.png",
+			"type": "image",
+			"name": "building_housebg_png"
+		},
+		{
+			"url": "assets/game/building/building_land_item.png",
+			"type": "image",
+			"name": "building_land_item_png"
+		},
+		{
+			"url": "assets/game/building/building_up_ok.png",
+			"type": "image",
+			"name": "building_up_ok_png"
+		},
+		{
+			"url": "assets/game/createrole/createrole.json",
+			"type": "sheet",
+			"name": "createrole_json",
+			"subkeys": "role_btn_random_png,role_item_bg_png,role_item_select_png,role_name_inp_png,role_title_png,role_zhuangshi_png"
+		},
+		{
+			"url": "assets/game/createrole/createrole_bg.jpg",
+			"type": "image",
+			"name": "createrole_bg_jpg"
+		},
+		{
+			"url": "assets/game/guide/guide.png",
+			"type": "image",
+			"name": "guide_png"
+		},
+		{
+			"url": "assets/game/login/login.json",
+			"type": "sheet",
+			"name": "login_json",
+			"subkeys": "advice_png,app_down_png,bubblebg_png,cpcc_png,g_png,gongshang_png,icann_png,icp_png,idnum_png,img_code_png,login_chk_rect_png,login_chk_select_png,login_txt_key_png,login_txt_pw_png,login_txt_remain_key_png,login_txt_remain_pw_png,realname_png,ref_code_png,refresh_png,reg_nickname_png,reg_phone_png,reg_pw2_png,reg_pw_png,sms_code_png,wen_png"
+		},
+		{
+			"url": "assets/game/login/login_title.png",
+			"type": "image",
+			"name": "login_title_png"
+		},
+		{
+			"url": "assets/game/pay/pay.json",
+			"type": "sheet",
+			"name": "pay_json",
+			"subkeys": "giftbg_png,pay_bg_png,pay_icon1_png,pay_icon2_png,pay_icon3_png,pay_item_bg_png,pay_zhuangshi_png"
+		},
+		{
+			"url": "assets/game/pet/pet.json",
+			"type": "sheet",
+			"name": "pet_json",
+			"subkeys": "arrow_png,dog_1_png,doghouse_png,dogtipbg_png,dogtitle_png,petlist_icon_png,petlist_title_png,skill_grow_png,skill_harvest_png,skill_planting_png,skill_roseheart_png"
+		},
+		{
+			"url": "assets/game/rank/rank.json",
+			"type": "sheet",
+			"name": "rank_json",
+			"subkeys": "btn_friend_home_png,friend_btn_add_png,friend_btn_search_png,friend_item_png,friend_title_search_png,rank1_png,rank2_png,rank3_png"
+		},
+		{
+			"url": "assets/game/roleinfo/roleinfo.json",
+			"type": "sheet",
+			"name": "roleinfo_json",
+			"subkeys": "panel_title_role_info_png,role_item_diamond_png,role_item_id_png,role_item_lv_png,role_item_name_png"
+		},
+		{
+			"url": "assets/icon/god/god_1_0.png",
+			"type": "image",
+			"name": "god_1_0_png"
+		},
+		{
+			"url": "assets/icon/god/god_1_1.png",
+			"type": "image",
+			"name": "god_1_1_png"
+		},
+		{
+			"url": "assets/icon/god/god_2_0.png",
+			"type": "image",
+			"name": "god_2_0_png"
+		},
+		{
+			"url": "assets/icon/god/god_2_1.png",
+			"type": "image",
+			"name": "god_2_1_png"
+		},
+		{
+			"url": "assets/icon/god/god_3_0.png",
+			"type": "image",
+			"name": "god_3_0_png"
+		},
+		{
+			"url": "assets/icon/god/god_3_1.png",
+			"type": "image",
+			"name": "god_3_1_png"
+		},
+		{
+			"url": "assets/icon/god/god_4_0.png",
+			"type": "image",
+			"name": "god_4_0_png"
+		},
+		{
+			"url": "assets/icon/god/god_4_1.png",
+			"type": "image",
+			"name": "god_4_1_png"
+		},
+		{
+			"url": "assets/icon/head/head1.png",
+			"type": "image",
+			"name": "head1_png"
+		},
+		{
+			"url": "assets/icon/head/head2.png",
+			"type": "image",
+			"name": "head2_png"
+		},
+		{
+			"url": "assets/icon/head/head3.png",
+			"type": "image",
+			"name": "head3_png"
+		},
+		{
+			"url": "assets/icon/head/head4.png",
+			"type": "image",
+			"name": "head4_png"
+		},
+		{
+			"url": "assets/icon/head/head5.png",
+			"type": "image",
+			"name": "head5_png"
+		},
+		{
+			"url": "assets/icon/head/head6.png",
+			"type": "image",
+			"name": "head6_png"
+		},
+		{
+			"url": "assets/icon/house/1.png",
+			"type": "image",
+			"name": "1_png"
+		},
+		{
+			"url": "assets/icon/house/10.png",
+			"type": "image",
+			"name": "10_png"
+		},
+		{
+			"url": "assets/icon/house/11.png",
+			"type": "image",
+			"name": "11_png"
+		},
+		{
+			"url": "assets/icon/house/12.png",
+			"type": "image",
+			"name": "12_png"
+		},
+		{
+			"url": "assets/icon/house/2.png",
+			"type": "image",
+			"name": "2_png"
+		},
+		{
+			"url": "assets/icon/house/3.png",
+			"type": "image",
+			"name": "3_png"
+		},
+		{
+			"url": "assets/icon/house/4.png",
+			"type": "image",
+			"name": "4_png"
+		},
+		{
+			"url": "assets/icon/house/5.png",
+			"type": "image",
+			"name": "5_png"
+		},
+		{
+			"url": "assets/icon/house/6.png",
+			"type": "image",
+			"name": "6_png"
+		},
+		{
+			"url": "assets/icon/house/7.png",
+			"type": "image",
+			"name": "7_png"
+		},
+		{
+			"url": "assets/icon/house/8.png",
+			"type": "image",
+			"name": "8_png"
+		},
+		{
+			"url": "assets/icon/house/9.png",
+			"type": "image",
+			"name": "9_png"
+		},
+		{
+			"url": "assets/icon/icon/icon.json",
+			"type": "sheet",
+			"name": "icon_json",
+			"subkeys": "10_1_png,10_2_png,1_80004_png,1_80005_png,1_80006_png,1_80007_png,1_80008_png,1_80009_png,1_80010_png,1_80011_png,1_80012_png,1_80013_png,1_80014_png,1_80015_png,1_80099_png,2_1_png,2_2_png,2_3_png,3_13_png,3_14_png,3_15_png,3_16_png,4_10_png,4_11_png,4_12_png,4_18_png,4_19_png,4_1_png,4_20_png,4_2_png,4_3_png,4_4_png,4_4b_png,4_5_png,4_5b_png,4_6_png,4_6b_png,4_7_png,4_7b_png,4_99_png,4_9_png,4_qingdizhilei_png,4_unll_png,5_1_png,5_2_png,5_3_png,5_4_png,6_8_png,8_2_png,8_3_png,8_4_png,999_999_png,coin_1_png"
+		},
+		{
+			"url": "assets/icon/land/land-1.png",
+			"type": "image",
+			"name": "land-1_png"
+		},
+		{
+			"url": "assets/icon/land/land0.png",
+			"type": "image",
+			"name": "land0_png"
+		},
+		{
+			"url": "assets/icon/land/land1.png",
+			"type": "image",
+			"name": "land1_png"
+		},
+		{
+			"url": "assets/icon/land/land2.png",
+			"type": "image",
+			"name": "land2_png"
+		},
+		{
+			"url": "assets/icon/land/land3.png",
+			"type": "image",
+			"name": "land3_png"
+		},
+		{
+			"url": "assets/icon/plant/104_1.png",
+			"type": "image",
+			"name": "104_1_png"
+		},
+		{
+			"url": "assets/icon/plant/104_2.png",
+			"type": "image",
+			"name": "104_2_png"
+		},
+		{
+			"url": "assets/icon/plant/104_3.png",
+			"type": "image",
+			"name": "104_3_png"
+		},
+		{
+			"url": "assets/icon/plant/80004_1.png",
+			"type": "image",
+			"name": "80004_1_png"
+		},
+		{
+			"url": "assets/icon/plant/80004_2.png",
+			"type": "image",
+			"name": "80004_2_png"
+		},
+		{
+			"url": "assets/icon/plant/80004_3.png",
+			"type": "image",
+			"name": "80004_3_png"
+		},
+		{
+			"url": "assets/icon/plant/80005_1.png",
+			"type": "image",
+			"name": "80005_1_png"
+		},
+		{
+			"url": "assets/icon/plant/80005_2.png",
+			"type": "image",
+			"name": "80005_2_png"
+		},
+		{
+			"url": "assets/icon/plant/80005_3.png",
+			"type": "image",
+			"name": "80005_3_png"
+		},
+		{
+			"url": "assets/icon/plant/80006_1.png",
+			"type": "image",
+			"name": "80006_1_png"
+		},
+		{
+			"url": "assets/icon/plant/80006_2.png",
+			"type": "image",
+			"name": "80006_2_png"
+		},
+		{
+			"url": "assets/icon/plant/80006_3.png",
+			"type": "image",
+			"name": "80006_3_png"
+		},
+		{
+			"url": "assets/icon/plant/80007_1.png",
+			"type": "image",
+			"name": "80007_1_png"
+		},
+		{
+			"url": "assets/icon/plant/80007_2.png",
+			"type": "image",
+			"name": "80007_2_png"
+		},
+		{
+			"url": "assets/icon/plant/80007_3.png",
+			"type": "image",
+			"name": "80007_3_png"
+		},
+		{
+			"url": "assets/icon/plant/80008_1.png",
+			"type": "image",
+			"name": "80008_1_png"
+		},
+		{
+			"url": "assets/icon/plant/80008_2.png",
+			"type": "image",
+			"name": "80008_2_png"
+		},
+		{
+			"url": "assets/icon/plant/80008_3.png",
+			"type": "image",
+			"name": "80008_3_png"
+		},
+		{
+			"url": "assets/icon/plant/80009_1.png",
+			"type": "image",
+			"name": "80009_1_png"
+		},
+		{
+			"url": "assets/icon/plant/80009_2.png",
+			"type": "image",
+			"name": "80009_2_png"
+		},
+		{
+			"url": "assets/icon/plant/80009_3.png",
+			"type": "image",
+			"name": "80009_3_png"
+		},
+		{
+			"url": "assets/icon/plant/80010_1.png",
+			"type": "image",
+			"name": "80010_1_png"
+		},
+		{
+			"url": "assets/icon/plant/80010_2.png",
+			"type": "image",
+			"name": "80010_2_png"
+		},
+		{
+			"url": "assets/icon/plant/80010_3.png",
+			"type": "image",
+			"name": "80010_3_png"
+		},
+		{
+			"url": "assets/icon/plant/80011_1.png",
+			"type": "image",
+			"name": "80011_1_png"
+		},
+		{
+			"url": "assets/icon/plant/80011_2.png",
+			"type": "image",
+			"name": "80011_2_png"
+		},
+		{
+			"url": "assets/icon/plant/80011_3.png",
+			"type": "image",
+			"name": "80011_3_png"
+		},
+		{
+			"url": "assets/icon/plant/80012_1.png",
+			"type": "image",
+			"name": "80012_1_png"
+		},
+		{
+			"url": "assets/icon/plant/80012_2.png",
+			"type": "image",
+			"name": "80012_2_png"
+		},
+		{
+			"url": "assets/icon/plant/80012_3.png",
+			"type": "image",
+			"name": "80012_3_png"
+		},
+		{
+			"url": "assets/icon/plant/80013_1.png",
+			"type": "image",
+			"name": "80013_1_png"
+		},
+		{
+			"url": "assets/icon/plant/80013_2.png",
+			"type": "image",
+			"name": "80013_2_png"
+		},
+		{
+			"url": "assets/icon/plant/80013_3.png",
+			"type": "image",
+			"name": "80013_3_png"
+		},
+		{
+			"url": "assets/icon/plant/plant_p0.png",
+			"type": "image",
+			"name": "plant_p0_png"
+		},
+		{
+			"url": "assets/icon/plant/plant_p4.png",
+			"type": "image",
+			"name": "plant_p4_png"
+		},
+		{
+			"url": "assets/icon/skin/fence1_0.png",
+			"type": "image",
+			"name": "fence1_0_png"
+		},
+		{
+			"url": "assets/icon/skin/fence1_1.png",
+			"type": "image",
+			"name": "fence1_1_png"
+		},
+		{
+			"url": "assets/icon/skin/fence2_0.png",
+			"type": "image",
+			"name": "fence2_0_png"
+		},
+		{
+			"url": "assets/icon/skin/fence2_1.png",
+			"type": "image",
+			"name": "fence2_1_png"
+		},
+		{
+			"url": "assets/icon/skin/fence3_0.png",
+			"type": "image",
+			"name": "fence3_0_png"
+		},
+		{
+			"url": "assets/icon/skin/fence3_1.png",
+			"type": "image",
+			"name": "fence3_1_png"
+		},
+		{
+			"url": "assets/icon/skin/fence4_0.png",
+			"type": "image",
+			"name": "fence4_0_png"
+		},
+		{
+			"url": "assets/icon/skin/fence4_1.png",
+			"type": "image",
+			"name": "fence4_1_png"
+		},
+		{
+			"url": "assets/icon/skin/ground1.jpg",
+			"type": "image",
+			"name": "ground1_jpg"
+		},
+		{
+			"url": "assets/icon/skin/ground2.jpg",
+			"type": "image",
+			"name": "ground2_jpg"
+		},
+		{
+			"url": "assets/icon/skin/ground3.jpg",
+			"type": "image",
+			"name": "ground3_jpg"
+		},
+		{
+			"url": "assets/icon/skin/ground4.jpg",
+			"type": "image",
+			"name": "ground4_jpg"
+		},
+		{
+			"url": "assets/icon/skin/skin1.png",
+			"type": "image",
+			"name": "skin1_png"
+		},
+		{
+			"url": "assets/icon/skin/skin2.png",
+			"type": "image",
+			"name": "skin2_png"
+		},
+		{
+			"url": "assets/icon/skin/skin3.png",
+			"type": "image",
+			"name": "skin3_png"
+		},
+		{
+			"url": "assets/icon/skin/skin4.png",
+			"type": "image",
+			"name": "skin4_png"
+		},
+		{
+			"url": "assets/preloading/loading_bar.png",
+			"type": "image",
+			"name": "loading_bar_png"
+		},
+		{
+			"url": "assets/preloading/loading_bar_bg.png",
+			"type": "image",
+			"name": "loading_bar_bg_png"
+		},
+		{
+			"url": "assets/preloading/loading_bg.png",
+			"type": "image",
+			"name": "loading_bg_png"
+		},
+		{
+			"url": "assets/game/menu/menu.json",
+			"type": "sheet",
+			"name": "menu_json",
+			"subkeys": "btn_gift_new_png,btn_gift_pc_png,btn_gift_png,btn_gift_upgrade_png,btn_sign_png,btn_steal_png,btn_top_hide_png,btn_top_show_png,menu_gy_gonggao_png,menu_gy_gonglue_png,menu_gy_guoyuan_png,menu_gy_hangqing_png,menu_gy_main_png,menu_m_gift_png,menu_m_home_png,menu_m_rank_png,menu_m_shop_png,menu_m_warehouse_png,menu_p_die_bug_png,menu_p_die_grass_png,menu_p_gain_png,menu_p_hoe_2_png,menu_p_hoe_3_png,menu_p_hoe_4_png,menu_p_manure_png,menu_p_plant_png,menu_p_put_water_png,menu_p_rose_heart_png,menu_p_uproot_png,menu_top_common_png,menu_top_log_png,menu_top_pay_png,menu_top_setting_png,menu_top_skin_png,plant_state1_png,plant_state2_png,plant_state3_png,setting_logout_png,setting_music_off_png,setting_music_on_png,top2_png,top_arrow_png,top_png"
+		},
+		{
+			"url": "iframe/backbutton.png",
+			"type": "image",
+			"name": "backbutton_png"
+		},
+		{
+			"url": "iframe/footer_img.png",
+			"type": "image",
+			"name": "footer_img_png"
+		},
+		{
+			"url": "iframe/gybg.png",
+			"type": "image",
+			"name": "gybg_png"
+		},
+		{
+			"url": "iframe/header_bg.png",
+			"type": "image",
+			"name": "header_bg_png"
+		},
+		{
+			"url": "iframe/header_img.png",
+			"type": "image",
+			"name": "header_img_png"
+		},
+		{
+			"url": "iframe/title_img.png",
+			"type": "image",
+			"name": "title_img_png"
+		},
+		{
+			"url": "assets/icon/icon/CC5.png",
+			"type": "image",
+			"name": "CC5_png"
+		},
+		{
+			"url": "assets/icon/icon/wenhuajingying.png",
+			"type": "image",
+			"name": "wenhuajingying_png"
+		},
+		{
+			"url": "assets/icon/icon/CC2.png",
+			"type": "image",
+			"name": "CC2_png"
+		},
+		{
+			"url": "assets/icon/icon/CC3.png",
+			"type": "image",
+			"name": "CC3_png"
+		},
+		{
+			"url": "assets/icon/icon/beian.png",
+			"type": "image",
+			"name": "beian_png"
+		},
+		{
+			"url": "assets/game/advertizement.png",
+			"type": "image",
+			"name": "advertizement_png"
+		},
+		{
+			"url": "assets/icon/plant/80015_1.png",
+			"type": "image",
+			"name": "80015_1_png"
+		},
+		{
+			"url": "assets/icon/plant/80014_1.png",
+			"type": "image",
+			"name": "80014_1_png"
+		},
+		{
+			"url": "assets/icon/plant/80014_2.png",
+			"type": "image",
+			"name": "80014_2_png"
+		},
+		{
+			"url": "assets/icon/plant/80014_3.png",
+			"type": "image",
+			"name": "80014_3_png"
+		},
+		{
+			"url": "assets/icon/plant/80015_2.png",
+			"type": "image",
+			"name": "80015_2_png"
+		},
+		{
+			"url": "assets/icon/plant/80015_3.png",
+			"type": "image",
+			"name": "80015_3_png"
+		},
+		{
+			"name": "login_title-1_png",
+			"type": "image",
+			"url": "assets/game/login/login_title-1.png"
+		}
+	]
+}

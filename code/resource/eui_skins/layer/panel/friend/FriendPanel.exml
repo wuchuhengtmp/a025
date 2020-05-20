@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FriendPanelSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="bgMask" fillAlpha="0.35" right="0" left="0" top="0" bottom="0"/>
+	<e:Component id="panelCommon" skinName="common.PanelCommonSkin" left="0" right="0" top="0" bottom="0" locked="true"/>
+	<e:Group width="640" height="960" touchThrough="true" verticalCenter="0" horizontalCenter="0">
+		<e:Image source="inner_page_png" y="216" scale9Grid="31,31,8,9" width="485" height="620" x="78"/>
+		<e:Group id="groupTab" x="78" width="274" y="169" height="46"/>
+		<e:Group id="groupTitleUser" x="84" width="471" y="205" height="70">
+			<e:Label y="25" textColor="0xFFCC00" text="游戏昵称" fontFamily="huakang" stroke="3" size="22" strokeColor="0x9C460B" x="13"/>
+			<e:Label y="25" textColor="0xFFCC00" text="等级" fontFamily="huakang" stroke="3" size="22" strokeColor="0x9C460B" x="179"/>
+			<e:Label y="25" textColor="0xFFCC00" text="财富" fontFamily="huakang" stroke="3" size="22" strokeColor="0x9C460B" x="306"/>
+			<e:Label y="25" textColor="0xFFCC00" text="操作" fontFamily="huakang" stroke="3" size="22" strokeColor="0x9C460B" x="408"/>
+		</e:Group>
+		<e:Scroller id="scroller" width="464" x="91" height="525" y="255"  scrollPolicyV="off" scrollPolicyH="on">
+			<e:List id="list" itemRendererSkinName="RankPlayItemRenderSkin" height="525">
+				<e:ArrayCollection>
+					<e:Array>
+					</e:Array>
+				</e:ArrayCollection>
+			</e:List>
+		</e:Scroller>
+		
+		<e:Button id="btnPrev" x="373" y="789">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_page_prev_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnNext" x="490" y="789">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_page_next_png"/>
+					<e:Label id="labelDisplay0" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label id="labelPage" text="1/60" x="418" y="798" size="24" width="72" textColor="0x753F24" textAlign="center"/>
+		<e:Button id="btnAdd" horizontalCenter="183.5" verticalCenter="-299.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="friend_btn_add_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,4 @@
+﻿1.php7.0.11
+2.依赖的扩展phalcon，对应php版本 https://phalconphp.com/zh/download/windows
+3.游戏 白鹭引擎4.0.3 https://www.egret.com/products/engine.html
+4.游戏 开发依赖nodejs和gulp

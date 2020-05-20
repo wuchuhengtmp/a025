@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skin.ShopBuyButtonSkin" states="up,down,disabled" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="88" height="44">
+	<e:Image includeIn="disabled" source="c_btn2_gray_png" anchorOffsetX="0" anchorOffsetY="0" width="100%" height="100%" x="0" y="0" scale9Grid="34,20,26,2"/>
+	<e:Image source="c_btn2_png" scale9Grid="42,19,5,2" includeIn="up,down" width="100%" height="100%" x="0" y="0"/>
+	<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-1" text="购买" fontFamily="huakang" textColor="0x59120C" size="22" x="10" y="10"/>
+</e:Skin>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoginSceneSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image bottom="0" source="createrole_bg_jpg" left="0" right="0" top="0" x="10" y="0" locked="true"/>
+	<e:Group id="formGroup" touchChildren="true" y="20" height="676" x="20" width="640" touchEnabled="false" horizontalCenter="0" verticalCenter="10">
+		<e:Image source="c_panel_png" scale9Grid="122,179,5,4" touchEnabled="false" width="602" height="631" y="7" x="19"/>
+		<e:Image source="pay_bg_png" scale9Grid="65,203,392,9" y="76" height="547" x="59"/>
+		<e:Button id="btnForgetPassword0" label="忘记密码" skinName="skin.LinkButtonSkin" horizontalCenter="-59" bottom="90" name="forgetBtn" visible="false"/>
+		<e:Image source="role_zhuangshi_png" y="559.34" x="40" touchEnabled="false"/>
+		<e:Image source="pay_zhuangshi_png" y="57" x="633" scaleX="-1"/>
+		<e:Image source="pay_zhuangshi_png" y="57" x="4"/>
+		<e:Image bottom="600" touchEnabled="false" horizontalCenter="18.5" id="imgTitle1" source="login_title_png"/>
+
+		<e:Label text="请使用EMG通行证登录" touchEnabled="false" y="150" bold="true" size="24" textColor="0xdcdcdc" horizontalCenter="0.5"/>
+		<e:Image source="role_name_inp_png" scale9Grid="36,30,4,3" y="191.68" width="323" x="210"/>
+		<e:Image source="role_name_inp_png" scale9Grid="36,30,4,3" y="273.68" width="323" x="210"/>
+		<e:EditableText id="username" x="230" y="210" verticalAlign="middle" textAlign="center" width="243" height="30" text="" anchorOffsetX="0" inputType="tel" textColor="0xffffff"/>
+		<e:EditableText id="password" x="230" y="292" verticalAlign="middle" textAlign="center" width="280" height="30" displayAsPassword="true" text="" textColor="0xffffff"/>
+		<e:Image source="login_txt_key_png" x="82" y="195.68"/>
+		<e:Image source="login_txt_pw_png" x="82" y="278.68"/>
+		<e:Image id="imgSelectArrow" source="top_arrow_png" x="500" y="225.68" anchorOffsetX="20.5" anchorOffsetY="14" />
+
+
+		<e:CheckBox id="remberMobileCheckBox" label="复选框" skinName="skin.ChkBoxSkin" x="130" y="381"/>
+		<e:CheckBox id="remberPasswordCheckBox" label="复选框" skinName="skin.ChkBoxSkin" x="330" y="381"/>		
+
+		<e:Button id="btnLogin" label="登录" skinName="skin.LoginButton" bottom="150" right="100"/>
+		<e:Button id="regBtn" label="注册" skinName="skin.LoginButton" left="100" bottom="150" name="loginBtn"/>
+
+		<e:Button id="btnDownloadApp" label="APP下载" skinName="skin.LinkButtonSkin" horizontalCenter="102" bottom="90" name="forgetBtn" visible="false"/>
+		<e:Group id="groupAccount" width="318" x="212" y="252" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xd38245" ellipseWidth="30" ellipseHeight="30" strokeWeight="2" strokeColor="0xa54f38"/>
+			<e:Scroller left="0" right="0" top="0" bottom="0">
+			<e:List id="listAccount" itemRendererSkinName="AccountItemSkin">
+				<e:ArrayCollection>
+				<e:Array>
+					<e:Object null=""/>
+					<e:Object null=""/>
+					<e:Object null=""/>
+				</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+				<e:VerticalLayout paddingTop="8" gap="0" paddingBottom="8" horizontalAlign="center" verticalAlign="middle"/>
+				</e:layout>
+			</e:List>
+			</e:Scroller>
+		</e:Group>
+		<e:Image width="640" height="60" scaleX="1" scaleY="1" source="advice_png" horizontalCenter="0" bottom="-22"/>
+	</e:Group>
+	<e:Image width="63" height="63" scaleX="1" scaleY="1" source="wen_png" x="17" y="963" visible="false"/>
+	<e:Image width="63" height="63" scaleX="1" scaleY="1" source="icp_png" x="100" y="963" visible="false"/>
+	<e:Image width="63" height="63" scaleX="1" scaleY="1" source="cpcc_png" x="190" y="963" visible="false"/>
+	<e:Image width="63" height="63" scaleX="1" scaleY="1" source="gongshang_png" x="279.5" y="963" visible="false"/>
+	<e:Image width="63" height="63" scaleX="1" scaleY="1" source="icann_png" x="368" y="963" visible="false"/>
+	<e:Image width="63" height="63" scaleX="1" scaleY="1" source="g_png" x="457.5" y="963" visible="false"/>
+	<e:Image id="btnAppDownlod" width="63" height="63" scaleX="1" scaleY="1" source="app_down_png" x="546" y="963" visible="false"/>
+
+</e:Skin>

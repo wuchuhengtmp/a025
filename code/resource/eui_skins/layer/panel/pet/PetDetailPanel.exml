@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PetDetailPanelSkin" width="528" height="498" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group id="groupHead" x="23" y="12">
+		<e:Image source="role_item_bg_png" y="0" x="0" width="150" height="154"/>
+		<e:Image id="imgHead" source="head2_png" y="17" x="15" width="125" height="120"/>
+		<e:Rect width="120" height="20" x="18" y="120" scaleX="1" scaleY="1" strokeAlpha="1" fillAlpha="0.5"/>
+		<e:Label id="labelScore" width="120" stroke="0" text="总评分：99999" wordWrap="false" strokeColor="0x97480e" y="122" size="16" x="18" multiline="false" maxChars="7" scaleX="1" scaleY="1" textAlign="center" textColor="0xf8c903"/>
+	</e:Group>
+	<e:Group id="groupName" x="206" y="15">
+		<e:Image id="imgEditName" width="138" height="42" x="52" y="2" source="inp_bg_png" scale9Grid="8,8,8,8" anchorOffsetX="0"/>
+		<e:EditableText id="editName" width="115" height="20" text="狗名字六个字" x="59" y="15" strokeColor="0x724f2e" stroke="2" size="18"/>
+		<e:Button id="btnRename" label="改名" skinName="skin.ShopBuyButtonSkin" width="70" height="45" x="242" y="21" scaleX="1" scaleY="1" anchorOffsetX="34" anchorOffsetY="21"/>
+		<e:Label text="昵称" x="0" y="14" textColor="0xf8c903" stroke="3" strokeColor="0x97480e" fontFamily="huakang" size="22"/>
+	</e:Group>
+	<e:Group id="groupLv" x="206" y="71">
+		<e:Label id="labelLv" width="70" stroke="2" textColor="0xFFFBF2" text="Lv.0" wordWrap="false" strokeColor="0x724F2E" y="2" size="20" x="59" multiline="false" maxChars="7"/>
+		<e:Label text="等级" x="0" y="1" textColor="0xF8C903" stroke="3" strokeColor="0x97480E" fontFamily="huakang" size="22"/>
+	</e:Group>
+	<e:Group id="groupExp" x="205" y="106.5">
+		<e:ProgressBar id="proExp" x="59" y="2.5" width="220" height="12" value="0" maximum="100" minimum="0" skinName="skin.ExpBarSkin"/>
+		<e:Label id="labelExp" width="220" stroke="2" textColor="0xFFFBF2" text="0/100" wordWrap="false" strokeColor="0x724F2E" y="4.5" size="12" x="59" multiline="false" maxChars="7" textAlign="center" anchorOffsetX="0"/>
+		<e:Label text="经验" x="0" y="0" textColor="0xF8C903" stroke="3" strokeColor="0x97480E" fontFamily="huakang" size="22" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group id="groupHp" width="250" height="24" x="205" y="136" scaleX="1" scaleY="1">
+		<e:Label text="体力" x="0" y="3" textColor="0xF8C903" stroke="3" strokeColor="0x97480E" fontFamily="huakang" size="22" scaleX="1" scaleY="1"/>
+		<e:ProgressBar id="proHp" x="59" y="6" width="220" height="12" value="0" maximum="100" minimum="0" skinName="skin.ExpBarSkin" scaleX="1" scaleY="1"/>
+		<e:Label id="labelHp" width="220" stroke="2" textColor="0xFFFBF2" text="0/100" wordWrap="false" strokeColor="0x724F2E" y="7" size="12" x="59" multiline="false" maxChars="7" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0"/>
+	</e:Group>
+	<e:Group x="34" y="187">
+		<e:Label id="labelAp" stroke="2" textColor="0xFFFBF2" text="999~999" wordWrap="false" strokeColor="0x724f2e" y="1" size="20" x="62" multiline="false" maxChars="7"/>
+		<e:Label id="labelDp" stroke="2" textColor="0xFFFBF2" text="999~999" wordWrap="false" strokeColor="0x724F2E" y="33" size="20" x="62" multiline="false" maxChars="7"/>
+		<e:Label id="labelSpeed" stroke="2" textColor="0xFFFBF2" text="999~999" wordWrap="false" strokeColor="0x724F2E" y="64" size="20" x="62" multiline="false" maxChars="7"/>
+		<e:Label id="labelLucky" stroke="2" textColor="0xFFFBF2" text="999" wordWrap="false" strokeColor="0x724F2E" y="96" size="20" x="62" multiline="false" maxChars="7"/>
+		<e:Label id="labelHpMax" stroke="2" textColor="0xFFFBF2" text="9999" wordWrap="false" strokeColor="0x724F2E" y="127" size="20" x="62" multiline="false" maxChars="7"/>
+		<e:Label text="速度" x="1" y="64" textColor="0xF8C903" stroke="3" strokeColor="0x97480E" fontFamily="huakang" size="20"/>
+		<e:Label text="生命" x="1" y="127" textColor="0xF8C903" stroke="3" strokeColor="0x97480E" fontFamily="huakang" size="20"/>
+		<e:Label text="幸运" x="1" y="95" textColor="0xF8C903" stroke="3" strokeColor="0x97480E" fontFamily="huakang" size="20"/>
+		<e:Label text="攻击" x="1" y="0" textColor="0xF8C903" stroke="3" strokeColor="0x97480E" fontFamily="huakang" size="20"/>
+		<e:Label text="防御" x="0" y="32" textColor="0xF8C903" stroke="3" strokeColor="0x97480E" fontFamily="huakang" size="20"/>
+	</e:Group>
+	<e:Group id="groupAttrEx" x="204" y="186">
+		<e:Image width="20" height="20" x="0" source="arrow_png" y="60"/>
+		<e:Label id="labelApEx" stroke="2" text="999~999" wordWrap="false" strokeColor="0xeeeeee" y="0" size="20" x="59" multiline="false" maxChars="7" textColor="0x0eff00"/>
+		<e:Label id="labelDpEx" stroke="2" text="999~999" wordWrap="false" strokeColor="0xeeeeee" y="32" size="20" x="59" multiline="false" maxChars="7" textColor="0x0eff00"/>
+		<e:Label id="labelSpeedEx" stroke="2" text="999~999" wordWrap="false" strokeColor="0xeeeeee" y="64" size="20" x="59" multiline="false" maxChars="7" textColor="0xd50017"/>
+		<e:Label id="labelLuckyEx" stroke="2" text="999" wordWrap="false" strokeColor="0xeeeeee" y="96" size="20" x="59" multiline="false" maxChars="7" textColor="0xD50017"/>
+		<e:Label id="labelHpMaxEx" stroke="2" text="999" wordWrap="false" strokeColor="0xeeeeee" y="128" size="20" x="59" multiline="false" maxChars="7" textColor="0x0EFF00"/>
+	</e:Group>
+
+	<e:Group x="377" y="191" anchorOffsetX="0" width="111" anchorOffsetY="0" height="144">
+		<e:Button id="btnTrainning" label="训练" skinName="skin.ShopBuyButtonSkin" width="70" height="45" anchorOffsetX="35" anchorOffsetY="23" y="27" x="72"/>
+		<e:Button id="btnDropTrainning" label="放弃" skinName="skin.ShopBuyButtonSkin" width="70" height="45" anchorOffsetX="36" anchorOffsetY="23" x="71" y="116"/>
+	</e:Group>
+	<e:Group id="groupFood" width="326" height="83" y="338" scaleX="1" scaleY="1" x="93" anchorOffsetX="0" anchorOffsetY="0">
+		<ns1:FoodItem x="56" y="4" skinName="FoodItemSkin"/>
+		<ns1:FoodItem x="202" y="4" skinName="FoodItemSkin"/>
+	</e:Group>
+	<e:Group x="67" y="447">
+		<e:Image source="inp_bg_png" x="64" y="0" width="110" scale9Grid="14,14,2,8"/>
+		<e:EditableText id="inpNum" text="1" x="69" y="5" width="101" textAlign="center" size="28" restrict="0-9" inputType="tel"/>
+		<e:Button id="btnSub" x="0" y="4">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_sub_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="btnAdd" x="198" y="5">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_add_png"/>
+			<e:Label id="labelDisplay0" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Button id="btnFeed" label="喂食" skinName="skin.ShopBuyButtonSkin" width="140" height="50" y="467" x="434" anchorOffsetX="69" anchorOffsetY="26"/>
+</e:Skin>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RankPlayItemRenderSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="53">
+	<e:Image source="friend_item_png" y="3" height="45"/>
+	<e:Image id="imgRank" source="rank1_png" x="24" y="6"/>
+	<e:Label id="labelRank" text="1" x="13" y="16" size="24" textColor="0x753F24" width="50" textAlign="center"/>
+	<e:Label id="labelName" y="18" textColor="0x753F24" text="玩家名称6个字" textAlign="center" width="193" size="20" x="46"/>
+	<e:Label id="labelLv" y="18" textColor="0x753F24" text="14" width="37" size="20" x="236" height="20" textAlign="center"/>
+	<e:Label id="labelMoney" y="18" textColor="0x753F24" size="20" text="152000" textAlign="center" width="118" height="20" x="274"/>
+	<e:Button id="btnHome" horizontalCenter="195.5" verticalCenter="-0.5" width="50" height="48">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_friend_home_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

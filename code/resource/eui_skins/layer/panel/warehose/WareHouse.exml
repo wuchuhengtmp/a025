@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WareHouseSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="bgMask" fillAlpha="0.35" right="0" left="0" top="0" bottom="0"/>
+	<e:Component id="panelCommon" skinName="common.PanelCommonSkin" left="0" right="0" top="0" bottom="0" locked="true"/>
+	<e:Group width="640" height="960" touchThrough="true" verticalCenter="0" horizontalCenter="0">
+		<e:Image source="inner_page_png" x="50" y="248" scale9Grid="31,31,8,9" width="540" height="499"/>
+		<e:Group id="groupTab" x="80" width="411" y="201" height="46"/>
+		<e:Group id="groupItem" height="490" width="535" x="52" y="252" anchorOffsetY="0"/>
+		<e:Button id="btnGame" label="进入果园" skinName="skin.LinkButtonSkin" horizontalCenter="-205" verticalCenter="287.5" visible="false"/>
+	</e:Group>
+</e:Skin>

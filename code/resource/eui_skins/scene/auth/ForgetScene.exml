@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ForgetSceneSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image bottom="0" source="createrole_bg_jpg" left="0" right="0" top="0" x="10" y="10" locked="true"/>
+	<e:Group id="formGroup" touchChildren="true" height="676" horizontalCenter="0" x="20" width="640" touchEnabled="false" verticalCenter="10">
+		<e:Image source="c_panel_png" scale9Grid="122,179,5,4" touchEnabled="false" width="602" height="760" horizontalCenter="0" verticalCenter="-44" anchorOffsetY="0"/>
+		<e:Image source="pay_bg_png" scale9Grid="65,203,392,9" y="-8" height="634" x="59" anchorOffsetY="0"/>
+		<e:Image source="panel_title_forget_png" horizontalCenter="0" y="-75"/>
+		<e:Image x="79" y="66" source="reg_phone_png"/>
+		<e:TextInput id="username" text="" inputType="tel" skinName="skin.LoginInput" anchorOffsetX="0" x="243" y="56" width="300" prompt="请输入要找回的手机号"/>
+		<e:Image x="78" y="137" source="reg_pw_png"/>
+		<e:TextInput id="password" text="" inputType="password" skinName="skin.LoginInput" anchorOffsetX="0" x="243" y="128" width="300" prompt="请输入新密码" displayAsPassword="true"/>
+		<e:Image y="209" x="78" source="reg_pw2_png"/>
+		<e:TextInput id="rePassword" text="" inputType="password" skinName="skin.LoginInput" anchorOffsetX="0" x="243" y="200" width="300" prompt="请再次输入密码" displayAsPassword="true"/>
+		<e:Image y="285" x="82" source="img_code_png"/>
+		<e:Image id="verifyImg" y="278" x="248" width="130" height="50" source=""/>
+		<e:TextInput id="verifyCode" text="" inputType="text" skinName="skin.LoginInput" anchorOffsetX="0" x="383" y="272" width="160" name="verify"/>
+		<e:Image y="357" x="81" source="sms_code_png"/>
+		<e:Button id="getVerifyBtn" label="获取" x="248" y="350" width="120" skinName="skin.LoginButton" height="50"/>
+		<e:TextInput id="smsCode" text="" inputType="tel" skinName="skin.LoginInput" anchorOffsetX="0" x="383" y="344" width="160" name="smsCode"/>
+		<e:Button id="backBtn" label="返回" x="94" y="445" skinName="skin.LoginButton"/>
+		<e:Button id="submitBtn" label="重置" x="341" y="445" skinName="skin.LoginButton"/>
+	</e:Group>
+</e:Skin>

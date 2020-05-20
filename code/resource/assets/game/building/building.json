@@ -1,0 +1,10 @@
+{"file":"building.png","frames":{
+"btn_building_up_gray_png":{"x":116,"y":67,"w":159,"h":65,"offX":0,"offY":0,"sourceW":159,"sourceH":65},
+"building_cost_itembg_png":{"x":0,"y":0,"w":114,"h":149,"offX":0,"offY":0,"sourceW":114,"sourceH":149},
+"building_land_num0_png":{"x":124,"y":231,"w":20,"h":19,"offX":0,"offY":0,"sourceW":20,"sourceH":19},
+"building_land_num1_png":{"x":124,"y":189,"w":20,"h":19,"offX":0,"offY":0,"sourceW":20,"sourceH":19},
+"building_land_num2_png":{"x":146,"y":189,"w":20,"h":19,"offX":0,"offY":0,"sourceW":20,"sourceH":19},
+"building_land_num3_png":{"x":124,"y":210,"w":20,"h":19,"offX":0,"offY":0,"sourceW":20,"sourceH":19},
+"building_lvbg_png":{"x":0,"y":151,"w":122,"h":85,"offX":0,"offY":0,"sourceW":122,"sourceH":85},
+"building_up_arrow_png":{"x":124,"y":134,"w":40,"h":53,"offX":0,"offY":0,"sourceW":40,"sourceH":53},
+"btn_building_up_png":{"x":116,"y":0,"w":159,"h":65,"offX":0,"offY":0,"sourceW":159,"sourceH":65}}}

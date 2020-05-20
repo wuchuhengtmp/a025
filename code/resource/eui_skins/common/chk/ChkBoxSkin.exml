@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skin.ChkBoxSkin" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="200" height="50">
+	<e:Image source="login_chk_rect_png" x="10" y="10"/>
+	<e:Image  source="login_chk_select_png" y="2" x="10" includeIn="upAndSelected,downAndSelected,disabledAndSelected"/>
+	<e:Image id="imgTxt" source="login_txt_remain_key_png" x="45" y="9"/>
+</e:Skin>

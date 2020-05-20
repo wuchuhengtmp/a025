@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ShopItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="530" height="130">
+	<e:Image source="shop_itembg_png" width="521" height="123" scale9Grid="90,57,4,2" x="8" y="6" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Label id="labelName" text="植物保护伞" y="25" textColor="0x784226" size="20" stroke="2" strokeColor="0xffffff" x="95"/>
+	<e:Label id="labelDesc" text="标签:驾驶的飞机10%加水淀粉。驾驶的减肥" y="57" size="20" x="95" width="292" textColor="0x4D3A25" height="48" anchorOffsetX="0" lineSpacing="5"/>
+	<e:Image source="sicon_diamond_png" x="240" y="19"/>
+	<e:Label id="labelPrice" text="3200" x="278" size="20" textColor="0xFFFEF7" stroke="2" strokeColor="0x685036" verticalCenter="-28"/>
+	<e:Button id="btnBuy" label="购买" skinName="skin.ShopBuyButtonSkin" y="57" x="449" anchorOffsetX="44" anchorOffsetY="23"/>
+	<e:Label id="labelLimit" x="384" size="16" width="128" textAlign="center" textColor="0x060606" text="限购:5000000" verticalCenter="34"/>
+</e:Skin>

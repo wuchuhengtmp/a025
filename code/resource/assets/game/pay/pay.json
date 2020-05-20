@@ -1,0 +1,8 @@
+{"file":"pay.png","frames":{
+"giftbg_png":{"x":0,"y":226,"w":96,"h":59,"offX":0,"offY":0,"sourceW":96,"sourceH":59},
+"pay_bg_png":{"x":0,"y":0,"w":522,"h":224,"offX":0,"offY":0,"sourceW":522,"sourceH":224},
+"pay_icon1_png":{"x":693,"y":223,"w":113,"h":109,"offX":0,"offY":0,"sourceW":113,"sourceH":109},
+"pay_icon2_png":{"x":868,"y":116,"w":136,"h":109,"offX":0,"offY":0,"sourceW":136,"sourceH":109},
+"pay_icon3_png":{"x":868,"y":0,"w":143,"h":114,"offX":0,"offY":0,"sourceW":143,"sourceH":114},
+"pay_item_bg_png":{"x":693,"y":0,"w":173,"h":221,"offX":0,"offY":0,"sourceW":173,"sourceH":221},
+"pay_zhuangshi_png":{"x":524,"y":0,"w":167,"h":269,"offX":0,"offY":0,"sourceW":167,"sourceH":269}}}

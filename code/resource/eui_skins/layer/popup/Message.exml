@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MessageSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*"  minWidth="400" maxWidth="560" minHeight="50">
+	<w:Config id="15a797f1752" ></w:Config>
+	<e:Rect ellipseWidth="20" ellipseHeight="20" fillAlpha="0.7" strokeAlpha="0" touchChildren="false" touchEnabled="false" left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
+	<e:Label size="28" wordWrap="true" multiline="true" stroke="1" strokeColor="0xffffff" touchEnabled="false" verticalAlign="middle" textAlign="center" maxWidth="600" minWidth="200" text="{msg}" left="10" right="10" top="10" bottom="10" lineSpacing="5" textColor="0xff0033"/>
+</e:Skin>

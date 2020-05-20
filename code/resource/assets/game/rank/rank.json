@@ -1,0 +1,9 @@
+{"file":"rank.png","frames":{
+"friend_title_search_png":{"x":0,"y":58,"w":261,"h":84,"offX":0,"offY":0,"sourceW":261,"sourceH":84},
+"rank1_png":{"x":360,"y":58,"w":30,"h":39,"offX":0,"offY":0,"sourceW":31,"sourceH":39},
+"rank2_png":{"x":328,"y":58,"w":30,"h":40,"offX":0,"offY":0,"sourceW":31,"sourceH":40},
+"rank3_png":{"x":392,"y":58,"w":29,"h":39,"offX":0,"offY":0,"sourceW":29,"sourceH":39},
+"btn_friend_home_png":{"x":263,"y":58,"w":63,"h":59,"offX":0,"offY":0,"sourceW":63,"sourceH":59},
+"friend_btn_search_png":{"x":432,"y":0,"w":71,"h":65,"offX":0,"offY":0,"sourceW":71,"sourceH":65},
+"friend_item_png":{"x":0,"y":0,"w":430,"h":56,"offX":0,"offY":0,"sourceW":430,"sourceH":56},
+"friend_btn_add_png":{"x":440,"y":70,"w":53,"h":49,"offX":0,"offY":0,"sourceW":53,"sourceH":49}}}

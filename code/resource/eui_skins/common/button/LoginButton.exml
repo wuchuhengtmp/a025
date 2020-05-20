@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skin.LoginButton" xmlns:e="http://ns.egret.com/eui" states="up,down,disabled">
+	<e:Image source="c_btn1_png" source.disabled="c_btn1_gray_png" scale9Grid="62,14,78,34" left="0" right="0" top="0" bottom="0"/>
+	<e:Label id="labelDisplay" text="离开" horizontalCenter="-4" verticalCenter="-1" textColor="0x59120C" fontFamily="Microsoft YaHei" size="36"/>
+</e:Skin>

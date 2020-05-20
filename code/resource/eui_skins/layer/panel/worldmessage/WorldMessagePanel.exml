@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WorldMessagePanelSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="bgMask" fillAlpha="0.35" right="0" left="0" top="0" bottom="0"/>
+	<e:Component id="panelCommon" skinName="common.PanelCommonSkin" left="0" right="0" top="0" bottom="0" locked="true"/>
+	<e:Group width="640" height="960" touchThrough="true" verticalCenter="0" horizontalCenter="0">
+		<e:Scroller id="scroller" width="487" height="587" x="81" y="177" scrollPolicyH="on" scrollPolicyV="off">
+				<e:List id="list" left="0" right="0" top="0" bottom="-12"/>
+		</e:Scroller>
+	</e:Group>
+	<e:Button verticalCenter="315.5" horizontalCenter="-67" id="btnPrev" x="10" y="10">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+				<e:Image width="100%" height="100%" source="btn_page_prev_png"/>
+				<e:Label id="labelDisplay0" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button verticalCenter="315.5" horizontalCenter="61" id="btnNext" x="10" y="10">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+				<e:Image width="100%" height="100%" source="btn_page_next_png"/>
+				<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label id="labelPage" textColor="0x753F24" text="1/60" textAlign="center" width="72" size="24" verticalCenter="316" horizontalCenter="-5"/>
+	<e:Button id="btnAdd" label="发布一条" skinName="skin.ShopBuyButtonSkin" horizontalCenter="159.5" verticalCenter="318" anchorOffsetX="0" width="103"/>
+</e:Skin>

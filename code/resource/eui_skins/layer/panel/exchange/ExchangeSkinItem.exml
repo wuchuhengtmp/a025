@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ExchangeSkinItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="506" height="382">
+	<e:Image source="building_housebg_png" y="46" x="17"/>
+	<e:Image id="imgIcon" y="66" x="31"/>
+	<e:Image source="tuding_png" x="75" y="32" scaleX="-1"/>
+	<e:Image x="117" y="30" source="skin_top_png"/>
+	<e:Image id="imgTitle" source="ex_skin_title2_png" horizontalCenter="17" verticalCenter="-135.5"/>
+	<e:Image source="log_itembg_png" x="44" y="283" width="447" height="71" scale9Grid="26,21,4,4"/>
+	<e:Group id="groupCost" height="65" width="267" x="89" y="284">
+	</e:Group>
+	<e:Image id="imgBuyed" source="ex_skin_buy_png" x="341" y="255"/>
+	<e:Button id="btnEx" label="兑换" skinName="skin.ShopBuyButtonSkin" y="316" x="424" anchorOffsetX="43" anchorOffsetY="22"/>
+</e:Skin>

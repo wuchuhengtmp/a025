@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GodCdTipSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="245" height="150">
+	<e:Image source="log_itembg_png" left="0" top="0" bottom="0" scale9Grid="24,20,4,3" right="0"/>
+	<e:Label id="labelName" text="丰收之神" x="19" y="11" size="20" textColor="0x79A90A" width="216"/>
+	<e:Label id="labelDesc" y="36" textColor="0x000000" text="供奉丰收之神，可保佑土地上的作物，获得没有灾害的最大收益" x="19" size="18" width="215" height="62" lineSpacing="0"/>
+	<e:Label id="labelTime" y="97" text="神像未激活" x="19" size="16" width="190" textColor="0x1E6101"/>
+	<e:Image source="m_phase_clock_png" x="18" y="119"/>
+	<e:ProgressBar id="barTime" x="44" y="121" skinName="common.CDBarSkin" value="100"/>
+</e:Skin>

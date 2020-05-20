@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>农家庄园</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="keywords" content="农家庄园">
+    <meta name="description" content="农家庄园是一款以农场为背景的模拟经营类游戏。大家都知道现在越来越多的玩家更喜欢玩游戏赚钱，那么农家庄园游戏将创造一个新的游戏体制，赚钱玩游戏来满足日益增长想玩游戏的玩家们的需求，农家庄园主要是以农场土地种植为背景的模拟经营游戏。">
+    <meta name="author" content="dhc">
+	<link href="icon.png" rel="shortcut icon">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+	<style>
+		@font-face {
+            font-family: huakang;
+            src: url('resource/fonts/huakang.ttf')
+        }
+		html, body {
+			-ms-touch-action: none;
+			background: #000;
+			padding: 0;
+			border: 0;
+			margin: 0 auto;
+			height: 100%;
+			width: 100%;
+		}
+	</style>
+
+	<!--这个标签为通过egret提供的第三方库的方式生成的 javascript 文件。删除 modules_files 标签后，库文件加载列表将不会变化，请谨慎操作！-->
+	<!--modules_files_start-->
+	<script egret="lib" src="libs/modules/egret/egret.js" src-release="libs/modules/egret/egret.min.js"></script>
+	<script egret="lib" src="libs/modules/egret/egret.web.js" src-release="libs/modules/egret/egret.web.min.js"></script>
+	<script egret="lib" src="libs/modules/game/game.js" src-release="libs/modules/game/game.min.js"></script>
+	<script egret="lib" src="libs/modules/res/res.js" src-release="libs/modules/res/res.min.js"></script>
+	<script egret="lib" src="libs/modules/eui/eui.js" src-release="libs/modules/eui/eui.min.js"></script>
+	<script egret="lib" src="libs/modules/tween/tween.js" src-release="libs/modules/tween/tween.min.js"></script>
+	<script egret="lib" src="libs/modules/particle/particle.js" src-release="libs/modules/particle/particle.min.js"></script>
+	<!--modules_files_end-->
+
+	<!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
+	
+
+	<!--这个标签会被替换为项目中所有的 javascript 文件。删除 game_files 标签后，项目文件加载列表将不会变化，请谨慎操作！-->
+	<!--game_files_start-->
+	<script egret="game" src="bin-debug/common/HashMap.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/common/ItemRendererBase.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/common/PanelBase.js"></script>
+	<script egret="game" src="bin-debug/scene/SceneBase.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/shop/CountAlert.js"></script>
+	<script egret="game" src="bin-debug/common/FastInput.js"></script>
+	<script egret="game" src="bin-debug/common/FontUtil.js"></script>
+	<script egret="game" src="bin-debug/AssetAdapter.js"></script>
+	<script egret="game" src="bin-debug/common/HttpClient.js"></script>
+	<script egret="game" src="bin-debug/common/LocalStorage.js"></script>
+	<script egret="game" src="bin-debug/common/MCUtil.js"></script>
+	<script egret="game" src="bin-debug/common/UIManager.js"></script>
+	<script egret="game" src="bin-debug/common/UIUtils.js"></script>
+	<script egret="game" src="bin-debug/common/UpdateTicker.js"></script>
+	<script egret="game" src="bin-debug/common/URLConfig.js"></script>
+	<script egret="game" src="bin-debug/common/Util.js"></script>
+	<script egret="game" src="bin-debug/GameLayerManager.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/building/BuildingCostItem.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/building/BuildingDataManager.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/building/BuildingHouse.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/building/BuildingLand.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/building/BuildingLandItem.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/building/BuildingPanel.js"></script>
+	<script egret="game" src="bin-debug/common/Const.js"></script>
+	<script egret="game" src="bin-debug/common/DateTimer.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/common/PanelCommon.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/common/PanelLoading.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/common/Tab.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/exchange/CostItem.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/exchange/ExchangeDataManager.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/exchange/ExchangeGodItem.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/exchange/ExchangePanel.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/exchange/ExchangePetFoodItem.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/exchange/ExchangeResItem.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/exchange/ExchangeSkinItem.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/friend/FriendAddPanel.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/friend/FriendItemRender.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/friend/FriendPanel.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/log/LogDataManager.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/log/LogItem.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/log/LogPanel.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/pay/PayPanel.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/pet/FoodItem.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/pet/PetDataManager.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/pet/PetDetailPanel.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/pet/PetInfoPanel.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/pet/PetListItem.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/pet/PetListPanel.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/pet/PetSkillPanel.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/rank/RankDataManager.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/rank/RankFriendItemRender.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/rank/RankPanel.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/rank/RankPetItemRender.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/rank/RankPlayItemRender.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/roleinfo/RoleInfoPanel.js"></script>
+	<script egret="game" src="bin-debug/common/AudioManager.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/shop/ShopDataManager.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/shop/ShopItemRender.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/shop/ShopPanel.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/skin/SkinItem.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/skin/SkinPanel.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/transfer/TransferAlert.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/transfer/TransferItem.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/transfer/TransferPanel.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/treasurebox/FruitUseBoxPannel.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/treasurebox/TreasureBoxPanel.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/warehouse/WareHouseDataManager.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/warehouse/WareHouseItem.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/warehouse/WareHouseNet.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/warehouse/WarehousePanel.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/worldmessage/AddMessageAlert.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/worldmessage/WorldMessageDataManager.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/worldmessage/WorldMessageItem.js"></script>
+	<script egret="game" src="bin-debug/layer/panel/worldmessage/WorldMessagePanel.js"></script>
+	<script egret="game" src="bin-debug/layer/popup/Alert.js"></script>
+	<script egret="game" src="bin-debug/layer/popup/Message.js"></script>
+	<script egret="game" src="bin-debug/layer/tips/BubbleTip.js"></script>
+	<script egret="game" src="bin-debug/layer/tips/GodCdTip.js"></script>
+	<script egret="game" src="bin-debug/layer/tips/GoodsTip.js"></script>
+	<script egret="game" src="bin-debug/LoadingUI.js"></script>
+	<script egret="game" src="bin-debug/Main.js"></script>
+	<script egret="game" src="bin-debug/scene/auth/AccountItem.js"></script>
+	<script egret="game" src="bin-debug/scene/auth/AccountManager.js"></script>
+	<script egret="game" src="bin-debug/scene/auth/CreateRoleScene.js"></script>
+	<script egret="game" src="bin-debug/scene/auth/EditScene.js"></script>
+	<script egret="game" src="bin-debug/scene/auth/ForgetScene.js"></script>
+	<script egret="game" src="bin-debug/scene/auth/LoginScene.js"></script>
+	<script egret="game" src="bin-debug/scene/auth/RegScene.js"></script>
+	<script egret="game" src="bin-debug/scene/game/GameScene.js"></script>
+	<script egret="game" src="bin-debug/scene/game/GameTopLayer.js"></script>
+	<script egret="game" src="bin-debug/scene/game/god/God.js"></script>
+	<script egret="game" src="bin-debug/scene/game/god/GodDataManager.js"></script>
+	<script egret="game" src="bin-debug/scene/game/GoodsVo.js"></script>
+	<script egret="game" src="bin-debug/scene/game/GYMenu.js"></script>
+	<script egret="game" src="bin-debug/scene/game/MainMenu.js"></script>
+	<script egret="game" src="bin-debug/scene/game/OtherPlayer.js"></script>
+	<script egret="game" src="bin-debug/scene/game/pet/Pet.js"></script>
+	<script egret="game" src="bin-debug/scene/game/pet/PetNet.js"></script>
+	<script egret="game" src="bin-debug/scene/game/plant/CoolMenu.js"></script>
+	<script egret="game" src="bin-debug/scene/game/plant/CoolMenuItem.js"></script>
+	<script egret="game" src="bin-debug/scene/game/plant/GameView.js"></script>
+	<script egret="game" src="bin-debug/scene/game/plant/LandDataManager.js"></script>
+	<script egret="game" src="bin-debug/scene/game/plant/Plant.js"></script>
+	<script egret="game" src="bin-debug/scene/game/plant/PlantCdTip.js"></script>
+	<script egret="game" src="bin-debug/scene/game/Player.js"></script>
+	<script egret="game" src="bin-debug/scene/game/SettingPanel.js"></script>
+	<script egret="game" src="bin-debug/scene/loading/PreLoading.js"></script>
+	<script egret="game" src="bin-debug/common/EventManager.js"></script>
+	<script egret="game" src="bin-debug/scene/SceneManager.js"></script>
+	<script egret="game" src="bin-debug/ThemeAdapter.js"></script>
+	<!--game_files_end-->
+</head>
+<style>
+	#iframeDiv, #iframe_wrapper , .bottom , .header {
+		position: absolute;
+	}
+	#iframeDiv{
+		background: url('resource/iframe/gybg.png') center center no-repeat;
+		background-size: cover;
+	}
+	#iframe_wrapper{
+		-webkit-overflow-scrolling: touch; 
+		overflow-y: scroll; 
+		left: 10px;
+	}
+	#iframe {
+		width: 100%;
+		height: 100%;
+		background: #fff;
+	}
+	.bottom ,.header{
+		width: 100%;
+		text-align: center;
+		z-index: 2;
+		left: 0;
+	}
+	.header{
+		background: url('resource/iframe/header_bg.png') center top no-repeat;
+		top: 0;
+		background-size: 100% 80%;
+	}
+	.header .front{
+		width: 100%;
+	}
+	.bottom .front{
+		width: 30%;
+	}
+	.bottom{
+		background: url('resource/iframe/footer_img.png') center bottom no-repeat;
+		bottom: 0;
+		background-size: 100% auto;
+	}
+</style>
+<body>
+
+	<div style="margin: auto;width: 100%;height: 100%;position: relative;" class="egret-player"
+		 data-entry-class="Main"
+		 data-orientation="portrait"
+		 data-scale-mode="fixedWidth"
+		 data-frame-rate="60"
+		 data-content-width="640"
+		 data-content-height="1136"
+		 data-show-paint-rect="false"
+		 data-multi-fingered="2"
+		 data-show-fps="false" data-show-log="false"
+		 data-show-fps-style="x:0,y:0,size:12,textColor:0x00c200,bgAlpha:0.9">
+
+		<div id="iframeDiv" style="top: 0;z-index: 1;display: none;">
+			<div class="header">
+				<img src="resource/iframe/header_img.png" class="front">
+				<img src="resource/iframe/title_img.png" id="title" style="width: 30%;position:relative;top: -60px">
+			</div>
+			<div id="iframe_wrapper">
+				<iframe src="" frameborder="0" id="iframe" name="iframe"></iframe>
+			</div>
+			<div class="bottom">
+				<img src="resource/iframe/backbutton.png" class="front" onclick="closeIframe()">
+			</div>
+		</div>
+	</div>
+	<script>
+
+		// window.onerror = function(err){
+		// 	console.warn(err);
+		// 	return true;
+		// }
+		RES.web.Html5VersionController.prototype.getVirtualUrl = function(url) {
+			if(url.indexOf('getVerify') >= 0){
+				return url;
+			}else{
+          	  return url + "?ver=2017060101";
+			}
+        }
+		egret.runEgret({renderMode:"canvas", audioType:0});
+
+		var canvas = document.getElementsByTagName('canvas')[0];
+		var iframeDiv = document.getElementById('iframeDiv');
+		iframeDiv.style.width = canvas.style.width;
+		iframeDiv.style.height = canvas.style.height;
+		iframeDiv.style.left = canvas.style.left;
+		function closeIframe(){
+			iframeDiv.style.display = 'none';
+		}
+	</script>
+</body>
+</html>

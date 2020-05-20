@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BuildingHouseSkin" width="538" height="560" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="building_housebg_png" x="12" y="9"/>
+	<e:Image source="tuding_png" x="455" y="8"/>
+	<e:Image id="imgIcon" horizontalCenter="-20" verticalCenter="-104" touchEnabled="false"/>
+	<e:Image source="building_lvbg_png" x="-9" y="1"/>
+	<e:BitmapLabel id="labelLv" text="LV.5" font="building_lv_font_fnt" letterSpacing="-7" rotation="-15" x="7" y="36" textAlign="center"/>
+	<e:Group id="groupCost" height="157" y="380" horizontalCenter="0"/>
+	<e:Button id="btnUp" label="升级" skinName="building.BuildingUpButtonSkin" horizontalCenter="0.5" verticalCenter="41.5"/>
+	<e:Label text="房屋等级每提升1级，将获得1块新土地。" y="359" size="22" horizontalCenter="0" textColor="0xF80227"/>
+</e:Skin>

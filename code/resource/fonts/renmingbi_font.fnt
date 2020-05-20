@@ -1,0 +1,14 @@
+{"file":"renmingbi_font.png","frames":{
+"y":{"x":56,"y":26,"w":23,"h":27,"offX":2,"offY":0,"sourceW":27,"sourceH":27},
+"0":{"x":84,"y":0,"w":26,"h":24,"offX":2,"offY":3,"sourceW":30,"sourceH":27},
+"1":{"x":112,"y":0,"w":13,"h":25,"offX":2,"offY":2,"sourceW":17,"sourceH":27},
+"2":{"x":0,"y":27,"w":25,"h":24,"offX":2,"offY":2,"sourceW":29,"sourceH":27},
+"3":{"x":81,"y":52,"w":25,"h":24,"offX":2,"offY":2,"sourceW":29,"sourceH":27},
+"4":{"x":0,"y":0,"w":26,"h":25,"offX":2,"offY":1,"sourceW":30,"sourceH":27},
+"5":{"x":27,"y":27,"w":25,"h":24,"offX":2,"offY":1,"sourceW":29,"sourceH":27},
+"6":{"x":0,"y":53,"w":25,"h":24,"offX":2,"offY":1,"sourceW":29,"sourceH":27},
+"7":{"x":28,"y":0,"w":26,"h":25,"offX":2,"offY":0,"sourceW":30,"sourceH":27},
+"8":{"x":81,"y":26,"w":25,"h":24,"offX":2,"offY":0,"sourceW":29,"sourceH":27},
+"9":{"x":56,"y":0,"w":26,"h":24,"offX":2,"offY":0,"sourceW":30,"sourceH":27},
+".":{"x":27,"y":53,"w":12,"h":12,"offX":2,"offY":12,"sourceW":16,"sourceH":27},
+" ":{"x":108,"y":27,"w":7,"h":27,"offX":0,"offY":0,"sourceW":7,"sourceH":27}}}

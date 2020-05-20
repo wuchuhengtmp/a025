@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GoodsTipSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="280">
+	<e:Image source="tipbg_png" scale9Grid="66,57,4,2" left="0" right="0" top="0" bottom="0" locked="true"/>
+	<e:Label id="labelName" text="植物之神" x="91" y="10" size="26" textColor="0x6F3D26" width="174" textAlign="center"/>
+	<e:Label id="labelDesc" text="作用：保护植物免受干旱的侵袭，提高植物产量10%" textAlign="left" size="20" verticalAlign="top" textColor="0x653318" left="90" right="6" bottom="12" top="42" lineSpacing="2"/>
+	<e:Group x="13" y="11">
+		<e:Image source="item_bg_png" x="0" y="2"/>
+		<e:Image id="imgIcon" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+</e:Skin>

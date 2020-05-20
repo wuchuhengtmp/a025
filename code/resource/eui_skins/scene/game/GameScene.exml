@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GameSceneSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="156da558905"/>
+	<e:Image id="imgGround" bottom="0" left="0" right="0" locked="true"/>
+	<e:Image id="btnSteal" source="btn_steal_png" scaleX="1.5" scaleY="1.5" left="20" bottom="20"/>
+
+
+	<e:Group id="groupHouse" horizontalCenter="125" width="0" height="0" bottom="568">
+	</e:Group>
+
+	<e:Group id="groupGod" height="209" width="246" left="0" bottom="442">
+		<e:Image id="imgGod1" source="god_1_0_png" x="0" bottom="-2"/>
+		<e:Image id="imgGod2" source="god_2_0_png" x="65" bottom="27"/>
+		<e:Image id="imgGod3" source="god_3_0_png" x="128" bottom="52"/>
+		<e:Image id="imgGod4" source="god_4_0_png" x="174" bottom="73"/>
+	</e:Group>
+	<e:Image id="imgFenceBack" bottom="348" y="10" source="fence1_0_png" right="0" locked="true"/>
+	<e:Image id="imgFenceFront" x="0" bottom="117" source="fence1_1_png" locked="true"/>
+	<e:Label id="annonceLabelNormal" text="玩家[昵称]sdfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" y="260" strokeColor="0xffffff" stroke="2" textColor="0x8c2300" size="26" horizontalCenter="0" wordWrap="true" textAlign="center" verticalAlign="middle" multiline="true" anchorOffsetX="0" width="548" anchorOffsetY="0" height="63" lineSpacing="4"/>
+	<e:Group id="annonceSys" width="550" height="35" y="208" horizontalCenter="0">
+		<e:Image width="550" height="35" y="0" source="annoncebg_png" x="0" scale9Grid="50,10,10,10"/>
+		<e:Scroller id="sysannonceScroller" width="510" height="35" y="0" x="33">
+		<e:Group x="0">
+			<e:Label id="annonceLabelSys" text="" y="0" height="35" x="0" size="20" verticalAlign="middle" bold="true" textColor="0xe10000" multiline="true"/>
+		</e:Group>
+		</e:Scroller>
+	</e:Group>
+	<e:Button id="btnBackHome" bottom="16" right="19" locked="true">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_home_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btnSign" width="100" height="100" scaleX="1" anchorOffsetX="50" anchorOffsetY="50" horizontalCenter="-261" verticalCenter="-300">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_sign_png"/>
+			<e:Label id="labelDisplay0" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btnGift" width="100" height="100" anchorOffsetX="50" anchorOffsetY="50" scaleX="1" horizontalCenter="-261" verticalCenter="-190" y="376">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_gift_png"/>
+			<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btnIndemnifyGift" width="90" height="90" anchorOffsetX="50" anchorOffsetY="50" scaleX="1" scaleY="1" horizontalCenter="-261" verticalCenter="-90" y="288">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_gift_upgrade_png"/>
+			<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btnNewGift" width="90" height="90" anchorOffsetX="50" anchorOffsetY="50" scaleX="1" scaleY="1" horizontalCenter="-261" verticalCenter="10">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_gift_new_png"/>
+			<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

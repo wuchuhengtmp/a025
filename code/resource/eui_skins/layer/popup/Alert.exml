@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="AlertSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bgMask" fillAlpha="0.35" right="0" top="0" bottom="0" left="0"/>
+	<e:Group id="groupPanel" horizontalCenter="0" width="640" verticalCenter="0" height="960" x="10" y="10">
+		<e:Image source="c_panel2_png" verticalCenter="-20" horizontalCenter="0" width="464" height="316" scale9Grid="136,128,4,2"/>
+		<e:Image source="trimming1_png" y="279" x="183"/>
+		<e:Image source="trimming2_png" y="302" x="381"/>
+		<e:Image horizontalCenter="0" y="263" source="panel_title_alert_png"/>
+		<e:Label id="labelTxt" textColor="0x753F24" text="确定购买30金币吗?" width="372" size="26" height="30" textAlign="center" verticalAlign="middle" lineSpacing="8" horizontalCenter="0" y="350"/>
+		<e:Label id="labelTxt2" y="386" size="20" text="确定购买30金币吗?" lineSpacing="8" textAlign="center" width="372" height="90" verticalAlign="middle" textColor="0xFF0005" multiline="true" wordWrap="true" horizontalCenter="0"/>
+		<e:Button id="btnOk" label="确定" skinName="skin.MidButtonSkin" x="216" y="511" anchorOffsetX="83" anchorOffsetY="30"/>
+		<e:Button id="btnNo" label="取消" skinName="skin.MidButtonSkin" x="411" y="512" anchorOffsetX="84" anchorOffsetY="31"/>
+	</e:Group>
+</e:Skin>

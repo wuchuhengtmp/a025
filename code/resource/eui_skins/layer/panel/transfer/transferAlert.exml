@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="TransferAlertSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bgMask" fillAlpha="0.35" right="0" top="0" bottom="0" left="0"/>
+	<e:Rect id="rectMask" left="0" right="0" top="0" bottom="0" fillAlpha="0"/>
+	<e:Group id="groupPanel" horizontalCenter="0" width="640" verticalCenter="0" height="960" x="10" y="10">
+		<e:Image source="c_panel2_png" verticalCenter="-20" horizontalCenter="0" width="464" height="316" scale9Grid="136,128,4,2"/>
+		<e:Image source="inp_bg_png" x="116" y="427" width="157" scale9Grid="14,14,2,8" anchorOffsetX="0"/>
+		<e:Image source="trimming1_png" y="279" x="183"/>
+		<e:Image source="trimming2_png" y="302" x="381"/>
+		<e:Image horizontalCenter="0" y="263" source="transfer_title_png"/>
+		<e:Group y="428.5" width="237" height="39" horizontalCenter="75.5" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image source="inp_bg_png" x="59.5" y="0" width="117" scale9Grid="14,14,2,8" anchorOffsetX="0"/>
+			<e:EditableText id="inpNum" text="1" x="59" y="6" width="110" textAlign="center" size="28" restrict="0-9" inputType="tel" anchorOffsetX="0"/>
+			<e:Button id="btnSub" anchorOffsetX="24.8" anchorOffsetY="16.4" y="20.4" x="31.3">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_sub_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="btnAdd" x="203.8" y="22.4" anchorOffsetX="23.8" anchorOffsetY="17.4">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_add_png"/>
+				<e:Label id="labelDisplay0" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Label id="labelTxt" textColor="0x753F24" text="确定购买30金币吗?" width="385" size="26" height="81" textAlign="center" verticalAlign="middle" lineSpacing="8" y="345" anchorOffsetY="0" wordWrap="true" multiline="true" anchorOffsetX="0" horizontalCenter="-6.5"/>
+
+		<e:Button id="btnOk" label="确定" skinName="skin.MidButtonSkin" x="216" y="511" anchorOffsetX="83" anchorOffsetY="30"/>
+		<e:Button id="btnNo" label="取消" skinName="skin.MidButtonSkin" x="411" y="512" anchorOffsetX="84" anchorOffsetY="31"/>
+		<e:Group id="groupAccount" width="150" x="118" y="467" anchorOffsetX="0" anchorOffsetY="0" height="133">
+			<e:Rect left="0" right="0" top="0" bottom="2" fillColor="0xD38245" ellipseWidth="30" ellipseHeight="30" strokeWeight="2" strokeColor="0xA54F38" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Scroller left="0" right="0" top="0" bottom="3" anchorOffsetX="0" anchorOffsetY="0">
+			<e:List id="listAccount" itemRendererSkinName="TransferItemSkin" anchorOffsetX="0" width="147" anchorOffsetY="0" height="130">
+				<e:ArrayCollection>
+				<e:Array>
+					<e:Object null=""/>
+					<e:Object null=""/>
+					<e:Object null=""/>
+				</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+				<e:VerticalLayout paddingTop="8" gap="0" paddingBottom="8" horizontalAlign="center" verticalAlign="middle"/>
+				</e:layout>
+			</e:List>
+			</e:Scroller>
+		</e:Group>
+		<e:Image id="imgSelectArrow" source="top_arrow_png" x="254" y="446" anchorOffsetX="16" anchorOffsetY="11.5" width="32" height="23"/>
+		<e:Label id="selType" textColor="0xfff9f7" text="金币" x="123" y="434" anchorOffsetY="0" size="26" height="25" anchorOffsetX="0" width="106"/>
+	</e:Group>
+</e:Skin>

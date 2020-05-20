@@ -1,0 +1,17 @@
+{
+	"name": "taojin",
+	"version": "1.0.0",
+	"description": "",
+	"main": "gulpfile.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {},
+	"devDependencies": {
+		"gulp": "^3.5.6",
+		"http-proxy-middleware": "^0.17.4",
+		"browser-sync": "^2.18.8"
+	}
+}
